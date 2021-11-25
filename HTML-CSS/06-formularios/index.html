@@ -9,7 +9,13 @@
 <body>
   <h1>Formularios en HTML</h1>
 
-
+  <!-- 
+    ? action -> dice hacia qué archivo irán los datos que se envían al pulsar en submit
+    ? autocomplete -> sirve para activar o desactivar el autocompletado de los campos, el típico que sale con el email para ayudarte a no tener que escribirlo
+    ? method -> decide si el formulario se envía a través del método GET o del método POST. 
+        * GET -> los datos se envían a traves de la url y todo el mundo los puede ver
+        * POST -> los datos se envían en el cuerpo del formulario hacia el servidor sin ser mostrados
+  -->
   <form 
     action="archivoDondeSeEnvianLosDatos.php" 
     name="formulario1" 
@@ -17,7 +23,16 @@
     method="POST"
   >
     <div>      
-      <label for="input-name">Nombre*</label>
+      <label for="input-name">Nombre*</label><br>
+      <!-- 
+        ? el id y el for de la etiqueta label deben ser iguales para poder relacionar el texto con el input correctamente
+        ? placeholder -> es el típico texto que aparece en el input para explicarte lo que hay que escribir y en el momento en que escribes algo desaparece
+        ? name -> es importante ponerlo porque si no, la persona que recibe los datos del formulario no sabe cuál es el valor de cada campo
+        ? value -> si queremos hacer que el campo tenga por defecto ya un valor de entrada lo pondríamos aquí.
+        ? maxlength y minlength -> hacen que no te deje escribir menos o mas caracteres de los que has establecido
+        ? required -> hace que ese campo sea obligatorio
+       -->
+       <!--* Este es un campo de tipo texto, para cualquier entrada de texto normal  -->
       <input 
         type="text"
         id="input-name" 
@@ -30,6 +45,9 @@
       >
     </div>
 
+    <br>
+       
+    <!--* Tipo email, dará error al enviar si no lo escribimos correctamente  -->
     <div>
       <label for="input-email">Email*</label>
       <input 
@@ -41,10 +59,12 @@
       >
     </div>
 
+    <!--* Tipo contraseña, nos muestra el texto escrito con asteriscos ****** -->
     <div>
       <label for="input-password">Password</label>
       <input name="password" id="input-password" type="password">
     </div>
+
 
     <div>
       <label for="input-tel">Teléfono</label>
@@ -56,8 +76,12 @@
       <input name="url" id="input-url" type="url">
     </div>
 
+    <!--* Tipo número, no nos dejará escribir algo que no sean números  -->
     <div>
       <label for="input-number">Edad</label>
+      <!-- 
+        ? min y mas -> indican el valor máximo y mínimo que queremos establecer. Dará error al enviar el formulario si no es correcto.
+       -->
       <input 
         name="edad" 
         id="input-number" 
@@ -67,6 +91,10 @@
       >
     </div>
 
+    <!--
+      * Tipo file,Para poder enviar archivos usaremos este input. 
+      ? Para poder usarlo necesitaremos añadir a la etiqueta form el atributo enctype="multipart/form-data" porque si no no se enviarán los archivos.
+    -->
     <div>
       <label for="input-file">Archivo</label>
       <input name="archivo" id="input-file" type="file">
@@ -87,43 +115,56 @@
       <input name="color" id="input-color" type="color">
     </div>
 
+
+    <!--* tipo range, nos muestra un selector de rango deslizante y podemos establecer unos valores que queramos  -->
     <div>
       <label for="input-range">Rango</label>
+      <!-- 
+        ? min y max -> establecen el valor de más a la izquierda (min) y el de más a la derecha (max)
+        ? value -> da un valor por defecto y coloca el deslizador en la posición que quieras
+        ? step -> le da al deslizador la idea de cuantas divisiones tiene que hacer en el deslizador y crea los valores de en medio para cada paso.
+       -->
       <input 
         name="rango" 
         id="input-range" 
         type="range" 
         min="0" 
         max="100" 
-        step="25" 
         value="25"
+        step="25" 
       >
     </div>
     <hr>
+
+    <!--* Un chechbox es la típica cajita que puedes seleccionar o deseleccionar, la de "Aceptas la política de privacidad"  -->
     <div>
       <label for="input-checkbox">¿Aceptas?</label>
-      <input name="aceptas" id="input-checkbox" type="checkbox" checked>
+      <input name="aceptas" id="input-checkbox" type="checkbox" required>
     </div>
     <hr>
+
+    <!--* Tipo radio, crea unos botones redondos que te permiten escoger solo uno de ellos. Para que puedas hacer eso es importante que a todos los inputs que traten de lo mismo se les ponga el mismo atributo name=""   -->
     <div>
       <p>Sexo:</p>
       <label for="input-radio-hombre">Hombre</label>
-      <input id="input-radio-hombre" type="radio" name="sexo">
+      <input id="input-radio-hombre" type="radio" name="sexo" required>
 
       <label for="input-radio-mujer">Mujer</label>
-      <input id="input-radio-mujer" type="radio" name="sexo">
+      <input id="input-radio-mujer" type="radio" name="sexo" >
 
       <label for="input-radio-nb">No binario</label>
-      <input id="input-radio-nb" type="radio" name="sexo">
+      <input id="input-radio-nb" type="radio" name="sexo" >
 
       <label for="input-radio-no-quiere">No quiero decirlo</label>
-      <input id="input-radio-no-quiere" type="radio" name="sexo">
+      <input id="input-radio-no-quiere" type="radio" name="sexo" >
     </div>
     <hr>
+
+    <!--* Es una etiqueta de selección que permite añadir varias opciones y que solo se pueda escoger una.  -->
     <div>
       <label for="language-select">Selecciona el lenguaje de programación que quieras:</label>
 
-      <select name="language" id="language-select">
+      <select name="language" id="language-select" multiple>
         <option value="">Selecciona un lenguaje...</option>
         <option value="javascript">JavaScript</option>
         <option value="php">PHP</option>
@@ -136,7 +177,7 @@
 
     <hr>
 
-    <!--  textarea es una caja de texto que se usa para escribir cosas más largas -->
+    <!--*  textarea es una caja de texto que se usa para escribir cosas más largas -->
     <div>
       <label for="mensaje">Mensaje</label>
       <textarea name="mensaje" id="mensaje"></textarea>
@@ -144,13 +185,18 @@
 
     <hr>
 
-    <!-- Botones de enviar y resetear -->
+    <!--* Botones de enviar y resetear -->
     <small>* estos campos son requeridos.</small>
     <input type="reset" value="Resetea el formulario">
     <input type="submit" value="Envia el formulario">
 
-
+    
+    <button type="button">Clica aquí</button>
+    
   </form>
+  
+
+
 
 </body>
 </html>

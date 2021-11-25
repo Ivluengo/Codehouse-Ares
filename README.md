@@ -17,7 +17,7 @@ Página que nos indica qué podemos usar, qué no, qué está en desuso o qué h
 
 ---
 
-[Cheat Sheet de HTML](https://i.emezeta.com/weblog/html5-cheatsheet/html5-cheatsheet-emezeta.pdf)
+[Cheat Sheet de HTML](https://cheatography.com/semagarcia/cheat-sheets/html5-standard-cheatsheet-espanol/)
 
 ---
 
