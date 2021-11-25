@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title></title>
+</head>
+<body>
+  <!--*  Páginas para descargarse imágenes GRATIS
+    pexels.com
+    unsplash.com
+    pixabay.com
+  -->
+
+  <!--* Páginas que nos dan fotos sin tener que descargarlas
+    picsum.photos
+  -->
+  <h2>Imágenes</h2>
+  <!--? IMÁGENES -->
+  <img 
+    src="./assets/images/pajaroEspino.jpg" 
+    alt="Foto de un pájaro espino"
+    
+  >
+  <img   
+    src="./assets/images/perrito.jpg" 
+    alt="Foto de un precioso perrito con la cabeza de lado y con los ojos cerrados"      
+    width="250px" 
+    height="auto"
+  />
+
+  <hr/>
+
+  <img src="./assets/images/pajaroEspino.jpg" alt="Pajarito"/>
+  <p>Esto es un pájaro espino</p>
+
+  <!-- Utilizamos figure y figcaption para relacionar una descripción con una elemento de tipo media -->
+  <figure>
+    <img src="./assets/images/pajaroEspino.jpg" alt="Pajarito">
+    <figcaption>Esto es un pájaro espino</figcaption>
+  </figure>
+  <hr/>
+  
+  <!--? AUDIO -->
+  <h2>Audios</h2>
+
+  <figure>
+    <figcaption>Escucha el siguiente sonido de un caballo:</figcaption>
+    <!-- controls es un atributo booleano, que quiere decir que está encendido o apagado -->
+    <audio controls>
+      <source src="./assets/audio/horse.mp3" type="audio/mpeg">
+      <source src="./assets/audio/horse.ogg" type="audio/ogg">
+      Tu navegador no acepta etiquetas &lt;audio>.
+    </audio>
+  </figure>
+  
+  <hr>
+
+  <h2>Vídeos</h2>
+  <!--? VIDEO -->
+  <figure>
+    <figcaption>Mira qué vídeo más divertido</figcaption>
+    <video loop controls width="450px" poster="./assets/images/pajaroEspino.jpg">
+      <source src="./assets/video/video-test.mp4" type="video/mp4">
+      <source src="./assets/video/video-test.webm" type="video/webm">
+
+      Este texto aparecerá si tu navegador no acepta la etiqueta &lt;video>
+    </video>
+
+  </figure>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Ejemplos de etiquetas semánticas</title>
+  </head>
+  <body>
+    
+    <!-- header es el encabezado de la página, suele tener el logo, login, buscadores, navegación, etc  -->
+    <header>
+      <h1>Logo</h1>
+      <!-- nav - Navegacion, menu, etc. -->
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Sobre mí</li>
+          <li>Notícias</li>
+          <li>Contacto</li>
+        </ul>      
+      </nav>    
+    </header>
+
+    <!-- Contenido principal de la página - Solo puede haber 1 main -->
+    <main>
+      <section id="noticias">
+        <article>
+          <h2>Título notícia 1</h2>
+          <h3>Fecha: <time datetime="2021-23-11 22:30">23-11-2021</time></h3>
+          <h4>El evento empieza a las <time>22h 30min</time></h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, culpa quae labore in doloremque autem veniam ex vel quidem accusantium iusto sit, magnam fugiat, cupiditate perferendis architecto dolore voluptatum. Ex.</p>
+        </article>
+        <article>
+          <h2>Título notícia 2</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, culpa quae labore in doloremque autem veniam ex vel quidem accusantium iusto sit, magnam fugiat, cupiditate perferendis architecto dolore voluptatum. Ex.</p>
+        </article>
+        <article>
+          <h2>Título notícia 3</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, culpa quae labore in doloremque autem veniam ex vel quidem accusantium iusto sit, magnam fugiat, cupiditate perferendis architecto dolore voluptatum. Ex.</p>
+        </article>        
+      </section>
+
+      <section id="servicios">
+        <h2>Nuestros servicios</h2>
+        <ol>
+          <li>Hacemos webs</li>
+          <li>Programamos aplicaciones</li>
+          <li>Enseñamos HTML</li>
+        </ol>
+      </section>
+
+      <section id="contacto">
+        <h2>¡Contáctanos!</h2>
+        <address>
+          calle Wallaby, 42, Sydney
+        </address>
+      </section>
+
+      <!-- Contenido que queremos mostrar pero que tiene una importancia secundaria, suele colocarse a un lado del contenido. -->
+      <aside>
+        <h2>Artículos anteriores</h2>
+        <ul>
+          <li>Artículo 1</li>
+          <li>Artículo 2</li>
+          <li>Artículo 3</li>
+        </ul>
+      </aside>
+
+    </main>
+
+    <!-- Caja para meter toda la información que se suele poner en el pie de página. -->
+    <footer>
+      <small>&copy; 2021 Todos los derechos reservados</small>
+      <nav>
+        <ul>
+          <li>Aviso legal</li>
+          <li>Cookies</li>
+        </ul>
+      </nav>
+    </footer>
+    
+  </body>
+  </html>
