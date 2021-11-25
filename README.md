@@ -1,5 +1,18 @@
 # Codehouse-Ares
 ## HTML
+
+### Referencias
+
+---
+
+Documentación de muchísimos lenguajes
+[Mozilla MDN](https://developer.mozilla.org/es/)
+
+Página que nos indica qué podemos usar, qué no, qué está en desuso o qué hay que todavía no está 100% implementado.
+[caniuse.com](https://caniuse.com/)
+
+
+
 ### Recursos
 
 ---
@@ -9,15 +22,15 @@
 ---
 
 #### Páginas para descargarse imágenes GRATIS
-- [pexels.com](https://pexels.com)
-- [unsplash.com](https://unsplash.com)
-- [pixabay.com](https://pixabay.com)
+1. [pexels.com](https://pexels.com)
+2. [unsplash.com](https://unsplash.com)
+3. [pixabay.com](https://pixabay.com)
 
 ---
 
 #### Páginas que nos dan fotos sin tener que descargarlas
-- [picsum.photos](https://picsum.photos)
-- [lorempixel.com](https://lorempixel.com)
+1. [picsum.photos](https://picsum.photos)
+2. [lorempixel.com](https://lorempixel.com)
 
 ---
 

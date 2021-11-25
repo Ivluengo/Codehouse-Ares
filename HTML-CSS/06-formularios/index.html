@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularios en HTML</title>
+</head>
+<body>
+  <h1>Formularios en HTML</h1>
+
+
+  <form 
+    action="archivoDondeSeEnvianLosDatos.php" 
+    name="formulario1" 
+    autocomplete="off" 
+    method="POST"
+  >
+    <div>      
+      <label for="input-name">Nombre</label>
+      <input 
+        type="text"
+        id="input-name" 
+        name="input-name" 
+        placeholder="Frank"
+        value="ivan"
+        maxlength="10"
+        minlength="3"
+      >
+    </div>
+
+    <div>
+      <label for="input-email">Email</label>
+      <input 
+        name="email" 
+        id="input-email" 
+        type="email" 
+        placeholder="email@email.com"
+      >
+    </div>
+
+    <div>
+      <label for="input-password">Password</label>
+      <input name="password" id="input-password" type="password">
+    </div>
+
+    <div>
+      <label for="input-tel">Teléfono</label>
+      <input name="telefono" id="input-tel" type="tel">
+    </div>
+
+    <div>
+      <label for="input-url">URL</label>
+      <input name="url" id="input-url" type="url">
+    </div>
+
+    <div>
+      <label for="input-number">Edad</label>
+      <input 
+        name="edad" 
+        id="input-number" 
+        min="1900" 
+        max="2020" 
+        type="number"
+      >
+    </div>
+
+    <div>
+      <label for="input-file">Archivo</label>
+      <input name="archivo" id="input-file" type="file">
+    </div>
+
+    <div>
+      <label for="input-date">Fecha</label>
+      <input name="fecha" id="input-date"  type="date">
+    </div>
+
+    <div>
+      <label for="input-time">Hora</label>
+      <input name="hora" id="input-time" type="time">
+    </div>    
+
+    <div>
+      <label for="input-color">Color</label>
+      <input name="color" id="input-color" type="color">
+    </div>
+
+    <div>
+      <label for="input-range">Rango</label>
+      <input 
+        name="rango" 
+        id="input-range" 
+        type="range" 
+        min="0" 
+        max="100" 
+        step="25" 
+        value="25"
+      >
+    </div>
+    <hr>
+    <div>
+      <label for="input-checkbox">¿Aceptas?</label>
+      <input name="aceptas" id="input-checkbox" type="checkbox" checked>
+    </div>
+    <hr>
+    <div>
+      <p>Sexo:</p>
+      <label for="input-radio-hombre">Hombre</label>
+      <input id="input-radio-hombre" type="radio" name="sexo">
+
+      <label for="input-radio-mujer">Mujer</label>
+      <input id="input-radio-mujer" type="radio" name="sexo">
+
+      <label for="input-radio-nb">No binario</label>
+      <input id="input-radio-nb" type="radio" name="sexo">
+
+      <label for="input-radio-no-quiere">No quiero decirlo</label>
+      <input id="input-radio-no-quiere" type="radio" name="sexo">
+    </div>
+    <hr>
+    <div>
+      <label for="language-select">Selecciona el lenguaje de programación que quieras:</label>
+
+      <select name="language" id="language-select">
+        <option value="">Selecciona un lenguaje...</option>
+        <option value="javascript">JavaScript</option>
+        <option value="php">PHP</option>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="python">Python</option>
+        <option value="java">Java</option>
+      </select>
+    </div>
+
+    <hr>
+
+    <!--  textarea es una caja de texto que se usa para escribir cosas más largas -->
+    <div>
+      <label for="mensaje">Mensaje</label>
+      <textarea name="mensaje" id="mensaje"></textarea>
+    </div>
+    
+    <hr>
+
+    <!-- Botones de enviar y resetear -->
+    <input type="reset" value="Resetea el formulario">
+    <input type="submit" value="Envia el formulario">
+
+
+  </form>
+
+</body>
+</html>

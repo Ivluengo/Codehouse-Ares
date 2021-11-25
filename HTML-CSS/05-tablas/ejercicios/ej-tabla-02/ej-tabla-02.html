@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio tablas 02</title>
+</head>
+<body>
+  <h1>Ejercicio Tablas 02</h1>
+
+  <table border="1px">
+    <caption>Título de mi tabla</caption>
+
+    <thead>
+      <tr>
+        <td colspan="6">Tabla de datos</td>
+      </tr>
+      <tr>
+        <th scope="col">Ciudad</th>
+        <th scope="col">Fecha</th>
+        <th scope="col">Temperatura</th>
+        <th scope="col">Altitud</th>
+        <th scope="col">Población</th>
+        <th scope="col">Ranking/Cena</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td rowspan="2">El Baixo Miño</td>
+        <td><time datetime="1995-08-02">Agosto 2, 1995</time></td>
+        <td>23º</td>
+        <td>200m</td>
+        <td>2000</td>
+        <td rowspan="2">5/5</td>
+      </tr>
+      <tr>
+        <td>Junio 2, 1995</td>
+        <td>20º</td>
+        <td>1300m</td>
+        <td>500</td>
+      </tr>
+      <tr>
+        <td>El Priorato</td>
+        <td>Mayo 1, 1995</td>
+        <td>18º</td>
+        <td>700m</td>
+        <td>800</td>
+        <td>4/5</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td colspan="5">TOTAL</td>
+        <td>4/5</td>
+      </tr>
+    </tfoot>
+
+
+
+  </table>
+
+</body>
+</html>
