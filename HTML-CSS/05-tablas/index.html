@@ -9,7 +9,9 @@
 <body>
   <h1>Tablas en HTML</h1>
   <!-- Etiqueta table para crear la tabla -->
-  <table>
+  <!-- ! No uséis ningun atributo que dé estilos porque se hace todo con CSS, aquí lo uso solo por temas didácticos -->
+  <h2>Tabla simple</h2>
+  <table border="1px">
     <!-- Etiqueta <tr> (table row) para crear filas -->
     <tr>
       <!-- Etiqueta <td> (table datacell) para crear cada celda de la fila -->
@@ -29,29 +31,102 @@
     </tr>
   </table>
 
+  <hr>
 
+  <!-- Añadimos celdas de cabecera -->
+  <!-- scope nos dice de qué es cabecera esa celda y podemos poner row o col -->
+  <!-- caption es como el título de la tabla, una descripción que los buscadores relacionan correctamente con la tabla -->
+  <h2>Tabla con cabecera</h2>
+  <table border="1px">
+    <caption>Tabla de datos de nombres y edades</caption>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Edad</th>
+    </tr>
+    <tr>
+      <th scope="row">Nombre 1</th>
+      <td>Ivan</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <th scope="row">Nombre 2</th>
+      <td>Lorena</td>
+      <td>19</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <!-- Alargar de celdas -->
+  <h2>Alargar o combinar celdas</h2>
+  <!-- rowspan combina la celda para que ocupe más de una fila -->
+  <!-- colspan combina la celda para que ocupe más de una columna -->
   <table>
+    <tr>
+      <th>Cabecera 1</th>
+      <th>Cabecera 2</th>
+      <th>Cabecera 3</th>
+      <th>Cabecera 4</th>
+    </tr>
     <tr>
       <td>Celda 1</td>
       <td>Celda 2</td>
       <td>Celda 3</td>
+      <td rowspan="2">Celda 4</td>
     </tr>
     <tr>
-      <td>Celda 4</td>
-      <td>Celda 5</td>
-      <td>Celda 6</td>
-    </tr>
-    <tr>
-      <td>Celda 7</td>
-      <td>Celda 8</td>
-      <td>Celda 9</td>
-    </tr>
-    <tr>
-      <td>Celda 10</td>
-      <td>Celda 11</td>
-      <td>Celda 12</td>
+      <td colspan="2">Celda 5</td>
+      <td>Celda 6</td>   
     </tr>
   </table>
+
+  <hr>
+
+  <!-- Grupos de datos -->
+
+  <h2>Agrupar datos de tablas</h2>
+  <!-- Podemos agrupar datos de tablas divididos en head, body, foot -->
+
+  <table border="1px">
+    <caption>Cesta de la compra</caption>
+    <!-- thead es la cabecera de la tabla -->
+    <thead>
+      <tr>
+        <td colspan="3">Bienvenido a tu cesta de la compra</td>
+      </tr>
+      <tr>
+        <th scope="col">Producto</th>
+        <th scope="col">Cantidad</th>
+        <th scope="col">Precio</th>
+      </tr>
+    </thead>
+    
+    <!-- tbody nos agrupa los datos más importantes de la tabla -->
+    <tbody>
+      <tr>
+        <th scope="row">Pelota</th>
+        <td>1</td>
+        <td>2€</td>
+      </tr>
+      <tr>
+        <th>Raqueta</th>
+        <td>2</td>
+        <td>5€</td>
+      </tr>
+    </tbody>
+
+    <!-- tfoot nos agrupa los datos que suelen estar abajo y contienen los totales, etc -->
+    <tfoot>
+      <tr>
+        <td colspan="2">TOTAL €:</td>
+        <td>12€</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  
+  
 
 
 </body>
