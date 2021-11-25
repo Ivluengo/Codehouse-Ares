@@ -17,7 +17,7 @@
     method="POST"
   >
     <div>      
-      <label for="input-name">Nombre</label>
+      <label for="input-name">Nombre*</label>
       <input 
         type="text"
         id="input-name" 
@@ -26,16 +26,18 @@
         value="ivan"
         maxlength="10"
         minlength="3"
+        required
       >
     </div>
 
     <div>
-      <label for="input-email">Email</label>
+      <label for="input-email">Email*</label>
       <input 
         name="email" 
         id="input-email" 
         type="email" 
         placeholder="email@email.com"
+        required
       >
     </div>
 
@@ -139,10 +141,11 @@
       <label for="mensaje">Mensaje</label>
       <textarea name="mensaje" id="mensaje"></textarea>
     </div>
-    
+
     <hr>
 
     <!-- Botones de enviar y resetear -->
+    <small>* estos campos son requeridos.</small>
     <input type="reset" value="Resetea el formulario">
     <input type="submit" value="Envia el formulario">
 
