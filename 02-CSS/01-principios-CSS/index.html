@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS - The beginning</title>
+
+  <!--* Necesitamos la etiqueta <link> para poder relacionar el archivo css con este archivo html -->
+  <link rel="stylesheet" href="./style.css">
+ 
+  <!-- Podemos añadir estilos css directamente en una etiqueta <style> -->
+  <style>
+    p {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Podemos añadir estilos "en línea", y solo afectará a esa etiqueta en concreto -->
+  <h1 style="color:red;">CSS - The beginning</h1>
+  <h2 style="color:blue;">Título h2 con el atributo style="color:blue;"</h2>
+  <h2>Otro h2 sin estilos</h2>
+  <h3>Título h3 que recibe estilos de un archivo css aparte</h3>
+  <p>Parrafos que reciben estilos desde la etiqueta &lt;style> que hay en el &lt;head></p>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, suscipit?</p>
+  <p>Lorem ipsum dolor sit amet.</p>
+
+  <p id="parrafo-especial">Párrafo con un id para darle estilos solo a este.</p>
+
+  <p class="parrafo">Parrafo con una clase para dar estilos a más de uno</p>
+  <p class="parrafo">Parrafo con una clase para dar estilos a más de uno</p>
+
+  <p>Parrafo normal</p>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+/** COLORES **/
+
+.color-normal {
+  color: mediumslateblue
+}
+
+#color-rgb {
+  color: rgb(233, 220, 37);
+}
+
+.color-hex {
+  color: #f75c26;
+}
+
+#color-hsl {
+  color: hsl(180, 100%, 30%);
+}

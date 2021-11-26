@@ -35,3 +35,13 @@ Página que nos indica qué podemos usar, qué no, qué está en desuso o qué h
 ---
 
 [Cheat Sheet de Emmet](https://docs.emmet.io/cheat-sheet/)
+
+---
+
+## CSS
+
+### Recursos
+
+[Snippet Generator](https://snippet-generator.app/)
+
+[Lista de nombres de los colores](https://www.w3schools.com/colors/colors_names.asp) 

@@ -1,0 +1,22 @@
+/* Esto es un comentario en CSS
+? todas las reglas CSS se componen de
+  * un selector -> Ej: h3
+  * las llaves que contendrán todas las propiedades css a cambiar
+  * cada una de las propiedades css:
+    * nombre de la propiedad 
+    * valor de la pripiedad
+    * punto y coma siempre!
+*/
+h3 {
+  color: tomato;
+}
+
+/* Dar estilos con un id se hace con la almohadilla # */
+#parrafo-especial {
+  color: lightseagreen;
+}
+
+/* Para dar estilos a una clase utilizamos el punto . */
+.parrafo {
+  color:orange;
+}
