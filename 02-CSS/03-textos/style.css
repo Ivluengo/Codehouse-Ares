@@ -1,0 +1,87 @@
+/* TEXTOS */
+body {
+  font-family: 'Cinzel', serif;
+}
+
+
+.letra-especial {
+  font-family: 'Cinzel', serif;
+}
+
+h1 {
+  font-family: 'Arial', sans-serif;
+}
+
+.sans-serif {
+  font-family: 'Arial', sans-serif;
+}
+
+.monospace {
+  font-family: monospace;
+}
+
+/*? Tamaño de la letra */
+
+.letra-grande {
+  font-size: 35px;
+}
+
+/*? grosor de la letra */
+
+h1 {
+  font-weight: 900;
+  /* podemos usar números del 100 al 900 o podemos usar palabras */
+  /* font-weight: 100 | 200 | 300 | 400 | 500 | 600 | 700 |800 | 900 | bold | normal ; */
+}
+/* Usaría font-weight: normal cuando quiero quitar la negrita de algo que lo lleva por defecto  */
+h2 {
+  font-weight: normal;
+}
+.no-bold{
+  font-weight: normal;
+}
+
+/*? Estilo de la letra cursiva o no cursiva  */
+h4 {
+  font-style: italic;
+  /* font-style: italic | normal; */
+}
+
+/*? Espaciado del texto */
+
+.parrafo-alto {
+  line-height: 30px;
+}
+
+.letras-separadas {
+  letter-spacing: 4px;
+}
+
+/*? Letras en mayúsculas o minúsculas  */
+.mayusculas {
+  text-transform: uppercase; 
+  text-align: right;
+}
+.minusculas {
+  text-transform: lowercase;
+  text-align: center;
+}
+
+.capitalizada {
+  text-transform: capitalize; 
+}
+
+/*? Alineación de textos  */
+
+h4 {
+  /* text-align: left | center | right | justify; */
+  text-align: right;
+}
+
+span {
+  text-align: center;
+}
+
+.justificado {
+  text-align: justify;
+}
