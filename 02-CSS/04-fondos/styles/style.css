@@ -1,0 +1,49 @@
+body {
+  background-color: lightsalmon;
+  background-image: url(https://www.transparenttextures.com/patterns/argyle.png);
+  background-repeat: repeat;
+}
+
+h1 {
+  background-color: lightgreen;
+}
+
+h2 {
+  background-color: lightseagreen;
+}
+
+.fondo-lista1 {
+  background-color: lightyellow;
+  background-image: url(https://picsum.photos/id/26/800/600);
+  /* Background repeat decide si la imagen de fondo se va a repetir en el eje y, en el x, en los dos o en ninguno */
+  background-repeat: no-repeat;
+  /*? background-repeat: repeat | no-repeat | repeat-x | repeat-y; */
+
+  /* background-position requiere dos valores, uno para las x y otro para las y. Si solo pones un valor interpreta el valor y como center */
+  background-position: 50% 20%;
+  /*? background-position: top |bottom | right | left | cualquier valor de medida */
+  /* background-position-x: center;
+  background-position-y: 150px; */
+
+  background-size: cover;
+  /* background-size: valor de medida | tanto por ciento | cover | contain */
+}
+
+.parrafo-fondo {
+  background-image: url(https://picsum.photos/id/27/800/600);
+  background-size: cover;
+
+  /* Mantiene la imagen de fondo fija al hacer scroll */
+  background-attachment: fixed;
+}
+
+/*? Shorthand de background, es decir, la versión corta de background  */
+
+.fondo-lista2 {
+  background-color: white;
+  background-image: url(https://picsum.photos/id/30/50);
+  background-repeat: no-repeat;
+  background-position: center;
+  /*? Shorthand  */
+  background: gray url(https://picsum.photos/id/40/50) repeat-x center;  
+}

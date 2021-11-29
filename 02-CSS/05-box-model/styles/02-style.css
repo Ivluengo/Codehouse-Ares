@@ -1,0 +1,131 @@
+body {
+  font-family: Arial;
+}
+h1{
+  margin-bottom: 70px;
+  text-align: center;
+}
+/* ******************************** */
+
+p {
+  background: pink;
+}
+
+.padre {
+  background: tomato;
+  color: white;
+  text-align: center;
+  width: 400px;  
+  height: 150px;
+
+  /*? border  */
+  /* border-color: black;
+     border-width: 4px;
+     border-style: solid; */
+  border: 4px solid black; 
+  border-right-color: yellow;
+  border-bottom-width: 10px;
+  border-left-style: double;
+  
+  /*? outline  */
+  outline: 5px solid blueviolet;
+  outline-offset: 20px;
+
+  /*? margin  */
+  margin-top: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+
+/* dir->  top  right  bottom  left */
+  margin: 50px  50px   50px   50px;
+
+/* dir->  top & bottom      right & left */
+  margin:    50px               50px;
+
+/*            4 lados iguales */
+  margin:          50px;
+
+  margin: 0px 0px 50px 0px; 
+  margin-bottom: 50px;
+  margin-left: 20px;
+
+  /* Si quisiéramos centrar en pantalla una caja cualquiera, después de darle un width, deberemos darle margin auto a los lados. */
+  margin-right: auto;
+  margin-left: auto;
+  margin: 50px auto;
+
+  /*? padding  */
+  padding-top: 20px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+
+  padding: 20px 50px 10px 30px;
+  padding: 10px;
+
+  /*? Box sizing */
+  /* Esta propiedad decide si el tamaño que hemos dado a la caja en el width, tendrá en cuenta el padding y el borde o no. */
+  /* Ej: 
+  box-sizing: content-box
+  width: 400px
+  padding: 10px  
+  border: 3px
+  WIDTH TOTAL = 400 + (10 + 10) + (3 + 3) = 426px  
+  */
+  /* Ej: 
+  box-sizing: border-box
+  width: 400px
+  padding: 10px  
+  border: 3px
+  WIDTH TOTAL = 400px
+  */
+  box-sizing: border-box;
+}
+
+/*? Sombras  */
+
+.sombras {
+  width: 200px;
+  background: white;
+  border: 2px solid black;
+  text-align: center;
+  margin: 50px auto;
+
+  /*          eje x   eje y   difuminado   extension */
+  box-shadow:  5px     5px       10px       5px black; 
+  /* box-shadow permite también añadir "inset" para invertir la sombra y que se haga hacia dentro */
+  box-shadow: 0 0 10px -1px #969696 inset;
+
+  /* Text-shadow funciona exactamente igual, lo único es que no permite añadir pixeles de extensión, solo acepta 3 valores y el color. */
+  text-shadow: 2px 1px 0px red;
+}
+
+
+
+
+
+span {
+  background: lightgreen;
+  width: 50px; /*! no funciona*/
+  height: 50px; /*! no funciona*/
+  padding: 10px; /** SI funciona!*/
+  margin: 100px; /*TODO  funciona a medias! solo en eje x */
+
+  margin-left: 10px; /** SI funciona!*/
+  margin-right: 10px; /** SI funciona!*/
+  margin-top: 10px; /*! no funciona*/
+  margin-bottom: 10px; /*! no funciona*/
+
+  border: 2px solid black; /** SI funciona!*/  
+}
+
+
+/*? Overflow -> decide qué hacer con el contenido que se sale de la caja */
+
+.padre {
+  overflow:visible; /* Opción normal, de serie */
+  overflow: hidden; /* Opción que recorta el contenido que se salga */
+  overflow: scroll; /* Opción que añade unas barras de scroll tanto en x como en y */
+  overflow: auto; /* Opción que decide dónde tiene que poner las barras de scroll automáticamente */  
+}

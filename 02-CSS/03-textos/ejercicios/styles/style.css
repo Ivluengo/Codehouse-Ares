@@ -1,0 +1,45 @@
+
+/** GLOBAL STYLES */
+body {
+  font-family: 'Playfair Display', serif;
+}
+
+p {
+  line-height: 20px;
+}
+
+/***********/
+
+
+/** NEWS */
+
+.fecha {
+  color: tomato;
+  font-weight: 600;
+}
+
+.titulo-noticia {
+  text-transform: uppercase;
+  font-weight: 900;  
+}
+
+.nombre-politico {
+  font-size: 24px;
+}
+
+/*************/
+
+
+/** Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.verde {
+  color: lightgreen;
+}
+
+.amarillo {
+  color: rgb(255,255,0);
+}
+/***********/

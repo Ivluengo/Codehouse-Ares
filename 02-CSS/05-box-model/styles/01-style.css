@@ -1,0 +1,35 @@
+body {
+  font-family: Arial;
+}
+
+/*? Ancho y alto */
+/*? width y height */
+
+div {
+  background: pink;
+  width: 80%;
+}
+
+
+.ancho-medio {
+  background: lightseagreen;
+  width: 50%;  /* ANCHO */
+
+  /* Los height en porcentajes solo funcionan si su padre tiene también un height establecido con una medida */
+  height: 10%; /* ALTURA */
+}
+
+
+/*? max-width y max-height  |  min-width y min-height  */
+/* Estas propiedades dejan que la caja cambie de tamaño pero hasta un máximo o un mínimo */
+div {
+  max-width: 800px;
+  min-width: 300px;
+  min-height: 100px;
+}
+
+span {
+  background: lightgreen;
+  width: 350px;
+  height: 200px;
+}

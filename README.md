@@ -45,3 +45,5 @@ Página que nos indica qué podemos usar, qué no, qué está en desuso o qué h
 [Snippet Generator](https://snippet-generator.app/)
 
 [Lista de nombres de los colores](https://www.w3schools.com/colors/colors_names.asp) 
+
+[Fondos CSS con patrones](https://www.transparenttextures.com/)
