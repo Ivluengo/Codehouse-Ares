@@ -1,0 +1,119 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: lightsalmon;
+  margin: 0;
+}
+
+h1 {
+  background: #000000;
+  color: #ffffff;
+  margin-top: 0;
+  text-align: right;
+  padding: 10px;
+}
+
+.container {
+  background: white;
+  border-radius: 5px;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 60%;
+  box-sizing: border-box;
+}
+
+.main-menu {
+  padding: 10px 0px;
+}
+
+.main-menu__list {
+  width: 60%;  
+  padding-left: 0px;
+  /** Para quitar los puntos de una lista */
+  list-style: none;
+  margin: 0px auto;
+
+}
+
+.main-menu__item {
+  background: lightgray;
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+}
+
+
+#news {
+  padding: 0 50px 50px 50px;
+  margin-top: 20px;
+}
+
+.article {
+  padding: 30px 0;
+  border-bottom: 3px dashed black;
+}
+
+.article__title {
+  text-align: center;
+  border-bottom: 3px solid lightgray;
+}
+
+.article__date {
+  background: lightsalmon;
+  color: white;
+  text-align: center;
+  width: 140px;
+  margin: 0 auto;
+}
+
+.article__quote {
+  font-family: 'Roboto Slab', serif;
+  border-bottom: 2px dotted lightsalmon;
+}
+
+.article__job {
+  background:lightgray;
+  color: lightsalmon;
+}
+
+.rule {
+  border: 2px dashed black;
+  margin: 50px 0;
+}
+
+
+.aside-news {
+  text-align: center;
+  padding: 10px 50px;
+  margin-top: 20px;
+}
+
+.aside-news__title {
+  border-bottom: 3px solid lightgray;
+}
+
+.secondary-menu__list {
+  padding-left: 0;
+  list-style: none;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.secondary-menu__item {
+  background: lightgray;
+  padding: 5px;
+  margin: 5px;
+}
+
+
+.footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+
+.blue-text {
+  color: blue;
+}

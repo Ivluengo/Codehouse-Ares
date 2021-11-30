@@ -101,6 +101,10 @@ p {
   text-shadow: 2px 1px 0px red;
 }
 
+/*? borde redondeado  */
+span{
+  border-radius: 5px;
+}
 
 
 
