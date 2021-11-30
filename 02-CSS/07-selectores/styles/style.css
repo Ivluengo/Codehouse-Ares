@@ -25,6 +25,16 @@ h2 {
   border: 2px solid rgb(206, 69, 69);
 } */
 
+
+/*?  propiedades duplicadas  */
+/* Siempre que quieras poner las mismas propiedades a más de un selector, los puedes separar con comas para evitar escribir duplicado */
+
+h1, h2, h3, h4, div span {
+  cursor: pointer;
+}
+
+
+
 /*********************/
 
 /*? Hermanos adyacentes */
@@ -69,8 +79,6 @@ img.border {
 /* selector:pseudoclase { prop: valor; } */
 
 /*? primer hijo y último hijo  */
-
-
 .pseudo-lista li:first-child {
   color: red;
 }

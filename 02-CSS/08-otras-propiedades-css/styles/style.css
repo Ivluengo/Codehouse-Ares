@@ -1,0 +1,105 @@
+/* ? cursor sirve para cambiar el dibujito de la flecha del ratón al pasar por encima del elemento. */
+span.cursor {
+  background: aqua;
+  padding: 7px;
+  cursor: pointer;
+}
+
+/*************************************/
+
+/* ? Opacity, visibility  */
+/*! opacity afecta al elemnto y todos sus descendientes. */
+h2.opacity {  
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+ul.opacity {
+  opacity: 0.4;
+}
+
+/* visibility:hidden esconde de manera visual el elemento y además hace que no puedas interactuar con él, observa el cursor si te pones encima de un elemento con opacity:0. Sigue reaccionando.  */
+h2.visibility {
+  visibility: visible; /** por defecto*/
+  visibility: hidden;
+}
+
+
+/***********************************/
+
+/* float */
+
+.noticia {
+  background: lightsalmon;
+}
+
+.noticia > .gaviota {
+  float: left;
+  margin-right: 15px;
+}
+
+.noticia > .paisaje {
+  float: right;
+}
+/* después de hacer un float, siempre deberíamos limpiar o resetear los elementos flotantes, para eso podemos crear un div/span vacío y darle la siguiente propiedad  */
+/** Esta es la versión menos moderna*/
+/* .limpiar-float {
+  clear: both;
+} */
+
+/** Esta es la versión más moderna, que sirve solo para limpiar el float únicamente al final de la caja */
+.noticia::after {
+  content:'';
+  display: block;
+  clear:both;
+}
+
+/*********************************/
+
+/*? Estilos de tablas */
+table {
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+table, th, td {
+  border: 4px solid black;  
+}
+
+table tr:nth-child(2n) {
+  background: lightgray;
+}
+
+/**********************/
+
+/* ? object-fit */
+/* Object fit necesita que la imagen tenga un width y height para funcionar. Y lo que hace es recortar la imagen para no deformarla */
+.caja-foto {
+  background: salmon;
+  width: 50%;
+  height: 150px;
+}
+
+.caja-foto img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left top;
+}
+
+/*************************/
+
+/* ? columnas */
+.columnas {
+  /* Número de columnas que te crea */
+  column-count: 3;
+  /* Espacio entre las columnas */
+  column-gap: 35px;
+  /* Te crea una regla vertical que separa las columnas */
+  column-rule: 2px solid tomato;
+  text-align: justify;
+}
+.columnas::first-letter {
+  color: tomato;
+  font-size: 50px;
+}
