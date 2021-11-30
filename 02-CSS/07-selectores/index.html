@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Selectores en CSS</title>
+</head>
+<body>
+  <h1>Selectores en CSS</h1>
+  <hr>
+  <h2>Selectores básicos</h2>
+  <h3 class="titulo3">Titulo con una clase</h3>
+  <h3 id="titulo-especial" class="titulo3">Titulo con una clase y un id</h3>
+
+  <form class="formulario">
+    <input id="name" type="text" placeholder="Nombre...">
+    <label for="name">Nombre</label>
+    <input type="text" placeholder="Apellidos...">
+    <input type="password" placeholder="Contraseña...">
+  </form>
+
+  <hr>
+  
+  <h2 class="border">Combinaciones de selectores</h2>
+
+  <ul class="lista">
+    <li class="lista__item">Item 1</li>
+    <li class="lista__item item2">Item 2</li>
+    <li class="lista__item">
+      Item 3
+      <ul class="lista-anidada">
+        <li>Item anidado 1</li>
+        <li>Item anidado 2</li>
+        <li>Item anidado 3</li>
+      </ul>
+    
+    </li>
+    <li class="lista__item">Item 4</li>
+  </ul>
+
+  <ul class="lista2">
+    <li>1 Item lista 2</li>
+    <li>2 Item lista 2</li>
+    <li>3 Item lista 2</li>
+  </ul>
+
+  <p class="border">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, consectetur.
+  </p>
+
+  <img class="border" src="https://picsum.photos/100" alt="">
+  
+<hr>
+
+<h2>Pseudoclases</h2>
+
+<ul class="pseudo-lista">
+  <li>item 1</li>
+  <li>item 2</li>
+  <li>item 3</li>
+  <li>item 4</li>
+  <li>item 5</li>
+  <li>item 6</li>
+  <li>item 7</li>
+  <li>item 8</li>
+  <li>item 9</li>
+  <li>item 10</li>
+</ul>
+
+<p class="pseudo-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, pariatur.</p>
+
+<button class="mi-boton">Clica aquí</button>
+
+<form class="pseudo-form">
+  <input id="name" type="text" placeholder="Nombre...">
+  <label for="name">Nombre</label>
+  <input type="text" placeholder="Apellidos...">
+  <input type="password" placeholder="Contraseña...">
+</form>
+<a href="https://google.es">Ir a google</a>
+<div class="hola">Hola</div>
+
+<ul class="lista-before">
+  <li>item 1</li>
+  <li>item 2</li>
+  <li>item 3</li>
+  <li>item 4</li>
+</ul>
+</body>
+</html>

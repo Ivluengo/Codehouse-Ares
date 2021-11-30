@@ -1,0 +1,181 @@
+/** Selectores básicos */
+/*? Por tipo  */
+
+h2 {
+  color: tomato;
+}
+
+/*? Por clase  */
+.titulo3 {
+  color: lightblue;
+}
+
+/*? Por id */
+#titulo-especial {
+  font-size: 24px;
+}
+
+/*? Universal, vale por cualquier etiqueta */
+* {
+  font-family: Arial;
+}
+
+/*? Por atributo  */
+/* [type="text"] {
+  border: 2px solid rgb(206, 69, 69);
+} */
+
+/*********************/
+
+/*? Hermanos adyacentes */
+h2 + ul {
+  border: 2px solid blue;
+}
+
+/*? Hermanos generales  */
+/* Para escribir la virgulilla hay que hacer ->   Alt izq. + 126 (en el teclado numérico)  */
+h2 ~ ul {
+  box-shadow: 0 0 10px black;
+}
+
+/*? Hijos generales o descendientes */
+.formulario input {
+  padding: 10px;
+}
+/*! ojo, cualquier descendiente mío, no simplemente un hijo directo  */
+body li {
+  color: green;
+}
+
+/*? Solo Hijos directos */
+body > h2{
+  letter-spacing: 6px;
+}
+
+
+/*? Para aumentar la especificidad, podemos poner los selectores de un mismo elemento juntos */
+img.border {
+  border-color: lightblue;
+}
+
+.border {
+  border: 4px solid salmon;
+}
+
+
+
+/*** Pseudoclases */
+/* selector { prop: valor; } */
+/* selector:pseudoclase { prop: valor; } */
+
+/*? primer hijo y último hijo  */
+
+
+.pseudo-lista li:first-child {
+  color: red;
+}
+
+.pseudo-lista li:last-child {
+  color: blue;
+}
+
+/*? hijos por en medio */
+.pseudo-lista li:nth-child(5) {
+  color: black;
+}
+
+.pseudo-lista li:nth-child(2n - 1) {
+  background: lightgray;
+}
+
+/*? Pseudo clases que aportan un estado diferente del elemento  */
+
+.mi-boton {
+  background: lightgreen;
+  padding: 5px 8px;
+  border: 2px solid lightsalmon;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  font-family: inherit;
+}
+
+.mi-boton:hover {
+  background: lightsalmon;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);  
+}
+
+.pseudo-parrafo:hover {
+  border: 2px solid black;
+}
+
+
+.pseudo-form input {
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  color: salmon;
+}
+
+.pseudo-form input:focus {
+  outline: none;
+  border-color: salmon; 
+}
+
+a {
+  color: orange;
+}
+
+a:active {
+  color: brown;
+}
+
+a:visited {
+  color: green;
+}
+
+/*? Pseudoelementos */
+/* Por decirlo de alguna manera, son igual que las pseudoclases */
+
+.pseudo-parrafo::first-letter {
+  font-size: 30px;
+}
+.pseudo-parrafo::first-line {
+  color: salmon;
+}
+
+
+input::placeholder {
+  color: purple;
+}
+
+::selection {
+  background: black;
+  color: white;
+}
+
+/*? pseudoelemento ::after y ::before  */
+
+.hola {
+  width: 100px;
+  background: salmon;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.hola::before {
+  content: '1 ';
+}
+
+.hola::after {
+  content: '';
+}
+
+.lista-before {
+  list-style: none;
+}
+
+.lista-before li::before {
+  content:'- ';
+  color: red;
+  font-size: 20px;
+  position: relative;
+}
