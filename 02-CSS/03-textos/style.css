@@ -47,6 +47,17 @@ h4 {
   /* font-style: italic | normal; */
 }
 
+/*? Subrayado o no subrayado y tipos de subrayado  */
+.subrayar {
+  
+  text-decoration: underline; /*subrayado normal*/
+  text-decoration: line-through; /* línea que tacha*/
+  text-decoration:overline; /* línea por arriba*/
+}
+a.sin-subrayar {
+  text-decoration: none;
+}
+
 /*? Espaciado del texto */
 
 .parrafo-alto {

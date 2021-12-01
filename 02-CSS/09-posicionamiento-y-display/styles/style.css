@@ -1,0 +1,98 @@
+.caja-bloque {
+  background: tomato;
+  /* block es el estado normal de cualquier caja de tipo bloque */
+  display: block;
+}
+
+
+.caja-inline {
+  background: lightgreen;
+  /* inline es el estado normal de cualquier caja de tipo en linea */
+  display: inline;
+}
+
+.parrafo {
+  background: lightseagreen;
+  /* inline-block hace que se comporte como un elemento inline, pero aceptando cambios de ancho y alto y de margenes */
+  display: inline-block;
+  width: 400px;
+  margin-top: 60px;  
+}
+
+/*******   DISPLAY FLEX! */
+
+.caja-padre {
+  background: lightgoldenrodyellow;
+  height: 300px;
+  border: 2px solid black;
+  display: flex;
+  /*? flex-direction: row | column; */
+  /*? justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly  -> por defecto tiene flex-start*/
+  /*? align-items: flex-start | flex-end | center | stretch | baseline; -> por defecto tiene stretch, que alarga las cajas hasta los bordes*/
+
+  /** Para centrar completamente al centro */
+  justify-content: center;
+  align-items: center;
+
+  /* space-between pone la primera y la última en los bordes y el resto se reparten el espacio que sobra */
+  /* justify-content: space-between; */
+  /* space around reparte las cajas poniendo espacio alrededor */
+  /* justify-content: space-around; */
+
+  /* space evenly reparte las cajas igual que space-around pero dejando exactamente el mismo espacio entre cajas */
+  /* justify-content: space-evenly; */
+ /**  Para hacer que las cajas cambien de fila si no caben  */
+ flex-wrap: nowrap; /* comportamiento por defecto*/
+ /* flex-wrap: wrap; comportamiento por defecto */
+
+ /** Cuando tenemos contenido que se ha separado en varias filas, para decidir su alineación usamos align-content  */
+ /*! solo funciona si tenemos wrap  */
+/*? align-content: flex-start | flex-end | center | space-between | space-around | space-evenly; */
+align-content: center;
+
+/* Sirve para decidir el espacio entre filas o columnas */
+/*! el row gap solo funciona si tenemos varias filas y las hemos alineado con align-content  */
+row-gap: 20px;
+column-gap: 10px;
+}
+
+.caja-hijo {
+  background: salmon;
+  border: 1px solid black;
+  margin: 0;
+  width: 90px;
+  height: 90px;
+  text-align: center;
+  font-size: 30px;
+}
+
+/* Por defecto, flex-shrink siempre es 1, es decir siempre permite que las cajas se compriman */
+
+/* Por defecto, flex-grow siempre es 0, es decir, no permite que se expandan a no ser que le digamos lo contrario */
+
+
+
+.caja1 {
+  /*! cuidado porque el order por defecto es 0  */
+  order: 3;
+  flex-grow: 1;
+}
+.caja2 {
+  order: 5;
+}
+.caja3 {
+  order: 1;
+  flex-grow: 5;
+}
+.caja4 {
+  order: 2;
+  align-self: start;
+}
+.caja5 {
+  order: 4;
+  /* flex-shrink: 0; */
+}
+
+.caja7 {
+  flex-shrink: 0;
+}

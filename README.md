@@ -47,3 +47,8 @@ Página que nos indica qué podemos usar, qué no, qué está en desuso o qué h
 [Lista de nombres de los colores](https://www.w3schools.com/colors/colors_names.asp) 
 
 [Fondos CSS con patrones](https://www.transparenttextures.com/)
+
+### Juegos CSS
+[Para display: flex; - Rana](https://flexboxfroggy.com/#es)
+[Para display: flex; - Cañones](http://www.flexboxdefense.com/)
+[Para display: grid; - Jardín](https://cssgridgarden.com/#es)
