@@ -96,3 +96,12 @@ column-gap: 10px;
 .caja7 {
   flex-shrink: 0;
 }
+
+
+/** !!!Truco con margin para empujar cajas hacia los lados */
+
+.caja-margin {
+  background: lightgreen;
+  margin-right: auto;
+  margin-bottom: auto;
+}

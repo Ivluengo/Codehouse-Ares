@@ -1,0 +1,64 @@
+.parrafo {
+  font-size: 20px;
+}
+
+html {
+  font-size: 15px;
+}
+
+
+/*? em y rem */
+/** en resumidas cuentas podríamos usar rem para todo y solo utilizar em en aquellos elementos que queramos que dependan del tamaño de texto de su padre */
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h2 span {
+  font-size: 0.8em;
+}
+
+h3 {
+  font-size: 1.7em;
+}
+
+p {
+  font-size: 1em;
+}
+
+.button{ 
+  background: tomato;
+  border: 0.1em solid black;
+  padding: 0.5em 1em;
+  border-radius: 0.3em;
+}
+
+.boton-small {
+  font-size: 0.7rem;
+}
+
+.boton-big {
+  font-size: 2rem;
+}
+
+/**********************/
+
+/*! En anchos intentar no usar nunca píxeles */
+/* Medidas en vw y vh (viewwidth y viewheight) */
+/* Toman las medidas en tanto por ciento pero siempre usando el ancho y alto de la vista del navegador */
+.caja-padre {
+  background: tomato;
+  height: 50vh;
+  width: 100%;
+  max-width: 600px;
+}
+
+.caja-hijo {
+  background: lightseagreen;
+  width: 40vw;
+  height: 50px;
+}

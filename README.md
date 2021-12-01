@@ -48,7 +48,14 @@ Página que nos indica qué podemos usar, qué no, qué está en desuso o qué h
 
 [Fondos CSS con patrones](https://www.transparenttextures.com/)
 
+[Teoría de FLEXBOX supercompleta](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+[Página con plantillas de HTML para hacer pruebas](https://html5up.net/)
+
+[Canal de youtube de Dorian Designs](https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A)
+
 ### Juegos CSS
+
 [Para display: flex; - Rana](https://flexboxfroggy.com/#es)
 [Para display: flex; - Cañones](http://www.flexboxdefense.com/)
 [Para display: grid; - Jardín](https://cssgridgarden.com/#es)
