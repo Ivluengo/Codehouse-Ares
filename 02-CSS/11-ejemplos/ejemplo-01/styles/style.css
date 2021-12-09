@@ -80,9 +80,10 @@ main.contenido {
   flex: 1; 
 }
 
-.bienvenida {
+.bienvenida {  
   background: #dc3545;
-  padding: 1rem;
+  transition: all 0.5s;
+  padding: 1rem; 
 }
 
 .bienvenida__title {
@@ -188,4 +189,43 @@ main.contenido {
   padding: 1rem;
   text-align: center;
   color: white;
+}
+
+
+
+/* Medie queries */
+
+@media (max-width: 700px) {
+  
+  .cabecera {
+    height: auto;
+    padding: 0.8rem 0;
+  }
+
+  .cabecera > .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navegacion {
+    margin: 1rem auto;
+  }
+
+
+  .articulos {
+    flex-direction: column;
+    row-gap: 0.5rem;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .contenido {
+    flex-direction: column;
+    row-gap: 0.5rem;
+  }
+
 }

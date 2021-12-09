@@ -11,8 +11,6 @@ Documentación de muchísimos lenguajes
 Página que nos indica qué podemos usar, qué no, qué está en desuso o qué hay que todavía no está 100% implementado.
 [caniuse.com](https://caniuse.com/)
 
-
-
 ### Recursos
 
 ---
@@ -22,6 +20,7 @@ Página que nos indica qué podemos usar, qué no, qué está en desuso o qué h
 ---
 
 #### Páginas para descargarse imágenes GRATIS
+
 1. [pexels.com](https://pexels.com)
 2. [unsplash.com](https://unsplash.com)
 3. [pixabay.com](https://pixabay.com)

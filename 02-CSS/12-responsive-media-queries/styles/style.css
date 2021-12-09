@@ -1,0 +1,28 @@
+.caja {
+  background: crimson;
+  color: white;
+  height: 100px;
+}
+
+
+@media (min-width: 800px) {
+  .caja {
+    background: orange;
+    font-size: 3rem;
+  }
+}
+
+
+@media (max-width: 800px) and (min-width: 500px) {
+  .caja {
+    background: salmon;
+    font-size: 2rem;
+  }
+}
+
+@media tv and (min-width: 800px) and (orientation: portrait) {
+  .caja {
+    background: orange;
+    font-size: 3rem;
+  }
+}

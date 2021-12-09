@@ -19,7 +19,7 @@
   margin-top: 60px;  
 }
 
-/*******   DISPLAY FLEX! */
+/******* DISPLAY FLEX! */
 
 .caja-padre {
   background: lightgoldenrodyellow;
@@ -104,4 +104,200 @@ column-gap: 10px;
   background: lightgreen;
   margin-right: auto;
   margin-bottom: auto;
+}
+
+/** display: none; */
+/* Hace desaparecer algo del DOM (de los elementos de la web)  */
+.desaparece {
+  display: none;
+}
+
+/********************************************  */
+/** POSICIONAMIENTO  */
+
+/*? relative hace que la caja la podamos mover de posición arriba, abajo, izquiera y derecha  */
+
+.relative {
+  background: coral;
+  height: 100px;
+  position: relative;
+  z-index: 2;
+
+  /* top: 50px; */
+}
+
+.relative-2 {
+  background: lightblue;
+  height: 100px;
+  top: -50px;
+  position: relative;
+  z-index: 5;
+}
+.relative-3 {
+  background: lightgreen;
+  height: 50px;
+  position: relative;
+  top: -125px;
+  z-index: 8;
+}
+
+p {
+  top: 400px;  /* esto no funciona porque no tiene un position puesto*/
+}
+p span {
+  position: relative;
+  top: -3px;
+  left: -20px;
+  right: 10px;
+  bottom: 50px;
+}
+
+/*? position: absolute;  */
+/* absolute siempre saca la caja del flujo de la página, es decir, todo lo otro se recoloca automáticamente */
+/* La caja con absolute pasa a tener in width del contenido, no del 100% */
+/* Las propiedades top, left, right, bottom las tomará como referencia del primer padre, o abuelo o bisabuelo, etc que tenga un position: relative.  Y si no hay ninguno entonces tomará como referencia el body */
+
+
+.padre-relativo {
+  background: lightgray;
+  position: relative;
+}
+
+h2.hijo-absolute {
+  background: lightsalmon;  
+  position: absolute;
+  bottom: -10px;
+  right: 0px;
+  margin: 0;
+}
+.producto {
+  position: relative;
+  background: lightgray;
+  display: inline-block;  
+}
+.producto:not(:last-child) {
+  margin-right: 15px;
+}
+.descuento {
+  position: absolute;
+  left: 0;
+  top: 95px;
+
+  background: crimson;
+  color: white;
+  padding: 2px 10px;
+}
+
+.precio {
+  display: inline-block;
+  background: yellow;
+  width: 22px;
+  height: 18px;
+  padding: 9px;
+  border-radius: 50px;
+
+
+  position: absolute;
+  top:-10px;
+  right: -10px;
+}
+
+.articulos {
+  display: flex;
+  gap: 20px;
+}
+
+.articulo-tienda{
+  background: lightgray;
+  position: relative;
+}
+
+.foto-producto{
+  display: block; /* para quitar el espacio absurdo que hay debajo de las imágenes*/
+}
+
+.titulo-producto {
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+  margin: 0;
+  color: white;
+  opacity: 0;
+  padding: 2px 10px;
+  transition: opacity 0.5s ease; 
+  z-index: 3; 
+}
+
+.articulo-tienda:hover .titulo-producto {
+  opacity: 1;
+}
+
+/** Opción overlay con un div añadido a nuestro html */
+/* .overlay {
+  background: black;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 2;
+  transition: opacity 0.5s ease;
+}
+.articulo-tienda:hover .overlay {
+  opacity: 0.4;
+} */
+
+/** Opción con un after*/
+
+.articulo-tienda::after {
+  content: '';
+  background: black;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  display: block;
+  transition: opacity 0.5s ease;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.articulo-tienda:hover::after {
+  opacity: 0.4;
+}
+
+
+/** Position: fixed  */
+
+.cabecera {
+  background: #f8f869;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+  width: 100%;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+h1 {
+  margin-top: 80px;
+}
+
+/** Position sticky */
+
+
+.banner {
+  background:crimson;
+  padding: 10px;
+
+  position: sticky;
+  top: 67px;
+  z-index: 15;
 }
