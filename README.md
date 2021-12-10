@@ -58,3 +58,8 @@ Página que nos indica qué podemos usar, qué no, qué está en desuso o qué h
 [Para display: flex; - Rana](https://flexboxfroggy.com/#es)
 [Para display: flex; - Cañones](http://www.flexboxdefense.com/)
 [Para display: grid; - Jardín](https://cssgridgarden.com/#es)
+
+### Frameworks CSS simples pero útiles
+
+[Skeleton](http://getskeleton.com/)
+[Primitive UI](https://taniarascia.github.io/primitive/)
