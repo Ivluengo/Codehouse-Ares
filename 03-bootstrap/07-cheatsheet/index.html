@@ -14,7 +14,45 @@
 </head>
 <body>
   
+  <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed top-0 start-0 w-100">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
   <div class="container">
+    
     <h1 class="text-center">Cheatsheet Bootstrap 5</h1>
     <h2 class="display-3 text-center text-decoration-underline">Tipografía</h2>
 
@@ -279,14 +317,863 @@
       <img src="https://picsum.photos/id/200/150" class="figure-img img-fluid" alt="Un yak">
       <figcaption class="">Texto que está con la class <code>.figure-caption</code></figcaption>
     </figure>
+  
+
+    <hr>
+
+    <h2 class="display-3 text-center text-decoration-underline">Tablas</h2>   
+
+    <table>
+      <caption>Tabla sin estilos</caption>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Primera</th>
+          <th>Segunda</th>
+          <th>Tercera</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>Ivan</td>
+          <td>Luengo</td>
+          <td>#facebook</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Jess</td>
+          <td>Hernández</td>
+          <td>@email</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Freya</td>
+          <td>Kira</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr class="my-5">
+
+    <table class="table">
+      <caption>Tabla con la class <code>.table</code></caption>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Primera</th>
+          <th>Segunda</th>
+          <th>Tercera</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>Ivan</td>
+          <td>Luengo</td>
+          <td>#facebook</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Jess</td>
+          <td>Hernández</td>
+          <td>@email</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Freya</td>
+          <td>Kira</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr class="my-5">
+
+    <table class="table table-info">
+      <caption>Tabla con la class <code>.table .table-info</code></caption>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Primera</th>
+          <th>Segunda</th>
+          <th>Tercera</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>Ivan</td>
+          <td>Luengo</td>
+          <td>#facebook</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Jess</td>
+          <td>Hernández</td>
+          <td>@email</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Freya</td>
+          <td>Kira</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr class="my-5">
+
+    <table class="table">
+      <caption>Tabla con la class <code>.table</code>
+      y fila con las class <code>.table-warning</code> y celdas con la class <code>.table-success</code></caption>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Primera</th>
+          <th>Segunda</th>
+          <th>Tercera</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="table-warning">
+          <th>1</th>
+          <td>Ivan</td>
+          <td>Luengo</td>
+          <td>#facebook</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Jess</td>
+          <td>Hernández</td>
+          <td>@email</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Freya</td>
+          <td class="table-success">Kira</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <hr class="my-5">
+
+    <table class="table table-striped">
+      <caption>Tabla con la class <code>.table .table-striped</code></caption>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Primera</th>
+          <th>Segunda</th>
+          <th>Tercera</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>Ivan</td>
+          <td>Luengo</td>
+          <td>#facebook</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Jess</td>
+          <td>Hernández</td>
+          <td>@email</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Freya</td>
+          <td>Kira</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr class="my-5">
+
+    <table class="table table-striped table-dark">
+      <caption>Tabla con la class <code>.table .table-striped .table-dark</code></caption>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Primera</th>
+          <th>Segunda</th>
+          <th>Tercera</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>Ivan</td>
+          <td>Luengo</td>
+          <td>#facebook</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Jess</td>
+          <td>Hernández</td>
+          <td>@email</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Freya</td>
+          <td>Kira</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr class="my-5">
+
+    <table class="table table-striped table-dark table-hover">
+      <caption>Tabla con la class <code>.table .table-striped .table-dark .table-hover</code> para crear el efecto hover</caption>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Primera</th>
+          <th>Segunda</th>
+          <th>Tercera</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>Ivan</td>
+          <td>Luengo</td>
+          <td>#facebook</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Jess</td>
+          <td>Hernández</td>
+          <td>@email</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Freya</td>
+          <td>Kira</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr class="my-5">
+
+    <table class="table table-bordered border-danger">
+      <caption>Tabla con la class <code>.table .table-bordered .border-danger</code> para añadirle bordes y además, de color rojo.</caption>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Primera</th>
+          <th>Segunda</th>
+          <th>Tercera</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>Ivan</td>
+          <td>Luengo</td>
+          <td>#facebook</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Jess</td>
+          <td>Hernández</td>
+          <td>@email</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Freya</td>
+          <td>Kira</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <hr class="my-5">
+
+    <table class="table table-borderless">
+      <caption>Tabla con la class <code>.table .table-borderless</code> para quitarle los bordes a la tabla.</caption>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Primera</th>
+          <th>Segunda</th>
+          <th>Tercera</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>Ivan</td>
+          <td>Luengo</td>
+          <td>#facebook</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Jess</td>
+          <td>Hernández</td>
+          <td>@email</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Freya</td>
+          <td>Kira</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="table table-sm">
+      <caption>Tabla con la class <code>.table .table-sm</code> para crear una tabla compacta.</caption>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Primera</th>
+          <th>Segunda</th>
+          <th>Tercera</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>Ivan</td>
+          <td>Luengo</td>
+          <td>#facebook</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Jess</td>
+          <td>Hernández</td>
+          <td>@email</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Freya</td>
+          <td>Kira</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr>
+
+    <p class="lead">Tabla responsiva, que crea un scroll horizontal para no perder datos. Para ello envolvemos la tabla con una caja con la class <code>.table-responsive</code></p>
+
+    <div class="table-responsive">
+      <table class="table">
+        <caption>Tabla con la class <code>.table .table-borderless</code> para quitarle los bordes a la tabla.</caption>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Primera</th>
+            <th>Segunda</th>
+            <th>Tercera</th>
+            <th>Cuarta</th>
+            <th>Quinta</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>1</th>
+            <td>Ivan</td>
+            <td>Luengo</td>
+            <td>#facebook</td>
+            <td>34</td>
+            <td>Rubio</td>
+          </tr>
+          <tr>
+            <th>2</th>
+            <td>Jess</td>
+            <td>Hernández</td>
+            <td>@email</td>
+            <td>36</td>
+            <td>Castaña</td>
+          </tr>
+          <tr>
+            <th>2</th>
+            <td>Freya</td>
+            <td>Kira</td>
+            <td>@twitter</td>
+            <td>7</td>
+            <td>Pelirroja</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  
+
+    <h2 class="display-3 text-center text-decoration-underline">Formularios</h2>   
+
+    <p class="lead">Formulario sin estilos:</p>
+    <form class="mb-5">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name">
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="mensaje" ></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <p class="lead">Formulario con estilos básicos:</p>
+    <form class="mb-5">
+      <div class="mb-3">
+        <label class="form-label" for="name">Nombre: .form-label</label>
+        <input class="form-control" type="text" id="name" name="name" placeholder=".form-control">
+      </div>
+      <div>
+        <label class="form-label" for="message">Mensaje: .form-label</label>
+        <textarea class="form-control"  id="message" name="mensaje" placeholder=".form-control"></textarea>
+      </div>      
+      <button class="btn btn-warning mt-3" type="submit">Enviar</button>
+      <input class="btn btn-danger mt-3" type="reset" value="Resetear">
+    </form>
+
+    <hr>
+    
+    <p class="lead">Formulario con tamaños distintos:</p>
+    <form class="mb-5">
+      <div class="mb-3">
+        <label class="form-label" for="name">Nombre: .form-label</label>
+        <input class="form-control form-control-sm" type="text" id="name" name="name" placeholder=".form-control .form-control-sm">
+        <input class="form-control" type="text" id="name" name="name" placeholder=".form-control">
+        <input class="form-control form-control-lg" type="text" id="name" name="name" placeholder=".form-control .form-control-lg">
+      </div>
+      <button class="btn btn-warning mt-3" type="submit">Enviar</button>
+
+    </form>
+
+    <hr>
+
+    <p class="lead">Formulario con columnas:</p>
+    <form class="row mb-5">      
+      <div class="col-4">
+        .col-4<br>
+        <label class="form-label" for="name">Nombre: .form-label</label>
+        <input class="form-control" type="text" id="name" name="name" placeholder=".form-control">
+      </div>
+      <div class="col-4">
+        .col-4<br>
+        <label class="form-label" for="surname">Nombre: .form-label</label>
+        <input class="form-control" type="text" id="surname" name="name" placeholder=".form-control">
+      </div>
+      <div class="col-4">
+        .col-4<br>
+        <label class="form-label" for="message">Mensaje: .form-label</label>
+        <textarea class="form-control"  id="message" name="mensaje" placeholder=".form-control"></textarea>
+      </div>
+      <button class="btn btn-warning mt-3 col-auto" type="submit">Enviar .col-auto</button>
+    </form>
+
+    <hr>
+
+    <p class="lead">Formulario con inputs color:</p>
+    <form>
+      <div>       
+        <label class="form-label" for="color">Color: .form-label</label>
+        <input class="form-control form-control-color" type="color" id="surname" name="color">
+        <small class="text-muted">.form-control .form-control-color</small>
+      </div>
+    </form>
+
+    <hr class="my-5">
+
+
+
+    <p class="lead">Checkbox, radio y select:</p>
+    <form class="my-5">
+      <p>Sexo: .form-check</p>
+      <div class="form-check">       
+        <input class="form-check-input" type="checkbox" id="gender-male" name="gender-checkbox">
+        <label class="form-check-label" for="gender-male">Hombre: .form-check-label</label>
+        <small class="text-muted">.form-check-input</small>
+      </div>
+      <div class="form-check">       
+        <input class="form-check-input" type="checkbox" id="gender-female" name="gender-checkbox">
+        <label class="form-check-label" for="gender-female">Mujer: .form-check-label</label>
+        <small class="text-muted">.form-check-input</small>
+      </div>
+    </form>
+  
+    <!-- Con switch en lugar de checkboxes -->
+    <form class="my-5">
+      <p>Sexo: .form-check .form-switch</p>
+      <div class="form-check form-switch">       
+        <input class="form-check-input" type="checkbox" id="gender-male-switch" name="gender-checkbox">
+        <label class="form-check-label" for="gender-male-switch">Hombre: .form-check-label</label>
+        <small class="text-muted">.form-check-input</small>
+      </div>
+      <div class="form-check form-switch">       
+        <input class="form-check-input" type="checkbox" id="gender-female-switch" name="gender-checkbox">
+        <label class="form-check-label" for="gender-female-switch">Mujer: .form-check-label</label>
+        <small class="text-muted">.form-check-input</small>
+      </div>
+    </form>
+
+    <!-- Radio buttons -->
+    <form class="my-5">
+      <p>Sexo: .form-check</p>
+      <div class="form-check">       
+        <input class="form-check-input" type="radio" id="male" name="gender-radio">
+        <label class="form-check-label" for="male">Hombre: .form-check-label</label>
+        <small class="text-muted">.form-check-input</small>
+      </div>
+      <div class="form-check">       
+        <input class="form-check-input" type="radio" id="female" name="gender-radio">
+        <label class="form-check-label" for="female">Mujer: .form-check-label</label>
+        <small class="text-muted">.form-check-input</small>
+      </div>
+    </form>
+
+
+    <form class="my-5">
+      <p>.form-select .form-select-sm</p>
+      <select class="form-select form-select-sm">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+      <p>.form-select</p>
+      <select class="form-select">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+      <p>.form-select .form-select-lg</p>
+      <select class="form-select form-select-lg">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </form>
+
+    <hr>
+
+    <p class="lead">Grupos de inputs:</p>
+
+    <form class="my-5">
+
+      <label for="money" class="form-label">Money:  .form-label</label><br>
+      .input-group
+      <div class="input-group">
+        <input id="money" type="number" class="form-control" placeholder="500 .form-control" >
+        <span class="input-group-text">€ .input-group-text</span>
+      </div>
+
+      <label for="instagram" class="form-label">Tu cuenta de instagram:</label><br>
+      .input-group
+      <div class="input-group">
+        <span class="input-group-text">@ .input-group-text</span>
+        <input id="instagram" type="text" class="form-control" placeholder="ivluengo .form-control" >
+      </div>
+
+    </form>    
+    <hr>
+
+    <h2 class="display-3 text-center text-decoration-underline">Bordes</h2> 
+    
+    
+  <div class="my-1 p-2 border">.border</div>
+  <div class="my-1 p-2 border border-primary">.border .border-primary</div>
+  <div class="my-1 p-2 border border-secondary">.border .border-secondary</div>
+  <div class="my-1 p-2 border border-success">.border .border-success</div>
+  <div class="my-1 p-2 border border-danger">.border .border-danger</div>
+  <div class="my-1 p-2 border border-warning">.border .border-warning</div>
+  <div class="my-1 p-2 border border-info">.border .border-info</div>
+  <div class="my-1 p-2 border border-light">.border .border-light</div>
+  <div class="my-1 p-2 border border-dark">.border .border-dark</div>
+  <div class="my-1 p-2 border border-white">.border .border-white</div>
+
+  <div class="w-25 mt-3 p-2 border-top border-success">.border-top</div>
+  <div class="w-25 mt-3 p-2 border-start border-success">.border-left</div>
+  <div class="w-25 mt-3 p-2 border-end border-success">.border-right</div>
+  <div class="w-25 mt-3 p-2 border-bottom border-success">.border-bottom</div>
+  <div class="mt-3 p-2 border-0 border-success">.border-0</div>
+
+  <div class="w-25 mt-3 p-2 border border-success border-1">.border-1</div>
+  <div class="w-25 mt-3 p-2 border border-success border-2">.border-2</div>
+  <div class="w-25 mt-3 p-2 border border-success border-3">.border-3</div>
+  <div class="w-25 mt-3 p-2 border border-success border-4">.border-4</div>
+  <div class="w-25 mt-3 p-2 border border-success border-5">.border-5</div>
+
+
+  <div class="mt-3 p-2 border border-danger rounded">.rounded</div>
+  <div class="mt-3 p-2 border border-danger rounded-0">.rounded-0</div>
+  <div class="mt-3 p-2 border border-danger rounded-1">.rounded-1</div>
+  <div class="mt-3 p-2 border border-danger rounded-2">.rounded-2</div>
+  <div class="mt-3 p-2 border border-danger rounded-3">.rounded-3</div>
+
+  <div class="w-25 my-3 p-2 border border-danger rounded-top">.rounded-top</div>
+  <div class="w-25 my-3 p-2 border border-danger rounded-bottom">.rounded-bottom</div>
+  <div class="w-25 my-3 p-2 border border-danger rounded-end">.rounded-end</div>
+  <div class="w-25 my-3 p-2 border border-danger rounded-start">.rounded-start</div>
+  <div class="w-25 my-3 p-2 border border-danger rounded-circle">.rounded-circle</div>
+  <div class="w-25 my-3 p-2 border border-danger rounded-pill">.rounded-pill</div>
+  <hr>
+
+  <h2 class="display-3 text-center text-decoration-underline">Utilidades</h2>
+
+  <h3>Anchos en tanto por ciento %:</h3>
+  <h3 class="bg-warning">Párrafo normal</h3>
+  <h3 class="w-100 bg-warning">Párrafo con <code>.w-100</code></h3>
+  <h3 class="w-75 bg-warning">Párrafo con <code>.w-75</code></h3>
+  <h3 class="w-50 bg-warning">Párrafo con <code>.w-50</code></h3>
+  <h3 class="w-25 bg-warning">Párrafo con <code>.w-25</code></h3>
+  <p class="lead">Anchos utilizando columnas:</p>
+
+  <h3 class="col-8 bg-warning">Párrafo con <code>.col-8</code></h3>
+  <h3 class="col-4 bg-warning">Párrafo con <code>.col-3</code></h3>
+  
+  
+  <hr>
+  <h3>Altos en tanto por ciento %:</h3>
+
+  <div class="bg-warning my-3" style="height: 200px;">
+    <span class="h-100 bg-info d-inline-block p-2">Caja con <code>.h-100</code></span>
+    <span class="h-75 bg-info d-inline-block p-2">Caja con <code>.h-75</code></span>
+    <span class="h-50 bg-info d-inline-block p-2">Caja con <code>.h-50</code></span>
+    <span class="h-25 bg-info d-inline-block p-2">Caja con <code>.h-25</code></span>
+  </div>
+  <hr>
+  <h3>margins y paddins</h3>
+
+  <p class="lead">Bootstrap tiene 5 medidas de márgenes y paddings:
+  </p>
+  <ul class="list-group my-4">
+    <li class="list-group-item"><span class="h5">0</span> - <strong>sin margen</strong>
+
+    <li class="list-group-item"><span class="h5">1</span> - Medida de <strong>0.25em</strong>
+    </li>
+    <li class="list-group-item"><span class="h5">2</span> - Medida de <strong>0.5em</strong>
+    </li>
+    <li class="list-group-item"><span class="h5">3</span> - Medida de <strong>1em</strong>
+    </li>
+    <li class="list-group-item"><span class="h5">4</span> - Medida de <strong>1.5em</strong>
+    </li>
+    <li class="list-group-item"><span class="h5">5</span> - Medida de <strong>3em</strong>
+    </li>
+   
+  </ul>
+
+  
+
+
+
+  <p class="lead">Los márgenes y paddings tienen la siguiente simbología</p>
+  <ul class="list-group my-4">
+    <li class="list-group-item"><span class="h5">m-*</span> - Margen igual en los 4 costados
+    </li>
+    <li class="list-group-item"><span class="h5">mt-*</span> - Margen arriba
+    </li>
+    <li class="list-group-item"><span class="h5">ms-*</span> - Margen izquierdo
+    </li>
+    <li class="list-group-item"><span class="h5">me-*</span> - Margen derecho
+    </li>
+    <li class="list-group-item"><span class="h5">mb-*</span> - Margen abajo
+    </li>
+    <li class="list-group-item"><span class="h5">p-*</span> - Padding igual en los 4 costados
+    </li>
+    <li class="list-group-item"><span class="h5">pt-*</span> - Padding arriba
+    </li>
+    <li class="list-group-item"><span class="h5">ps-*</span> - Padding izquierdo
+    </li>
+    <li class="list-group-item"><span class="h5">pe-*</span> - Padding derecho
+    </li>
+    <li class="list-group-item"><span class="h5">pb-*</span> - Padding abajo
+    </li>
+
+
+    <li class="list-group-item"><span class="h5">mx-*</span> - Margin izquierda y derecha
+    </li>
+    <li class="list-group-item"><span class="h5">my-*</span> - Margin arriba y abajo
+    </li>
+    <li class="list-group-item"><span class="h5">px-*</span> - Padding izquierda y derecha
+    </li>
+    <li class="list-group-item"><span class="h5">py-*</span> - Padding arriba y abajo
+    </li>
+   
+  </ul>
+
+  <p>Márgenes automáticos</p>
+
+  <ul class="list-group my-4">
+    <li class="list-group-item"><span class="h5">m-auto</span> - Margen automático en los 4 lados</li>
+    <li class="list-group-item"><span class="h5">ms-auto</span> - Margen izquierdo automático</li>
+    <li class="list-group-item"><span class="h5">me-auto</span> - Margen derecho automático</li>
+    <li class="list-group-item"><span class="h5">mt-auto</span> - Margen arriba automático</li>
+    <li class="list-group-item"><span class="h5">mb-auto</span> - Margen abajo automático</li>
+    <li class="list-group-item"><span class="h5">mx-auto</span> - Margen izquierdo y derecho automático</li>
+    
+  </ul>
+
+
+  <h5 class="mt-5 mb-4">Displays</h5>
+
+
+  <div class="bg-warning rounded" style="height: 200px">
+    <span class="d-block p-1 text-white bg-primary  rounded">Caja con .d-block </span>
+    <span class="d-block p-1 text-white bg-primary  rounded">Caja con .d-block </span>
+    <span class="d-block p-1 text-white bg-primary rounded">Caja con .d-block </span>
+    <span class="d-block p-1 text-white bg-primary  rounded">Caja con .d-block </span>  
+  </div>
+
+  <div class="bg-warning my-4 rounded" style="height: 100px">
+    <span class="d-inline p-1 text-white bg-primary rounded">Caja con .d-inline </span>
+    <span class="d-inline p-1 text-white bg-primary rounded">Caja con .d-inline </span>
+    <span class="d-inline p-1 text-white bg-primary rounded">Caja con .d-inline </span>
+    <span class="d-inline p-1 text-white bg-primary rounded">Caja con .d-inline </span>  
+  </div>
+
+  <div class="bg-warning my-4 rounded" style="height: 100px">
+    <span class="d-inline-block p-1 text-white bg-primary rounded">Caja con .d-inline-block </span>
+    <span class="d-inline-block p-1 text-white bg-primary rounded">Caja con .d-inline-block </span>
+    <span class="d-inline-block p-1 text-white bg-primary rounded">Caja con .d-inline-block </span>
+    <span class="d-inline-block p-1 text-white bg-primary rounded">Caja con .d-inline-block </span>  
+  </div>
+
+  <h6>Display flex</h6>
+  <div class="bg-warning my-4 d-flex rounded" style="height: 150px">
+    <span class="p-1 text-white bg-primary rounded">Caja padre con .d-flex </span>
+    <span class="p-1 text-white bg-primary rounded">Caja padre con .d-flex </span>
+    <span class="p-1 text-white bg-primary rounded">Caja padre con .d-flex </span>
+    <span class="p-1 text-white bg-primary rounded">Caja padre con .d-flex </span>  
+  </div>
+
+  <div class="bg-warning my-4 d-flex flex-column rounded" style="height: 150px">
+    <span class="p-1 text-white bg-primary rounded">Caja padre con .d-flex .flex-column </span>
+    <span class="p-1 text-white bg-primary rounded">Caja padre con .d-flex .flex-column </span>
+    <span class="p-1 text-white bg-primary rounded">Caja padre con .d-flex .flex-column </span>
+    <span class="p-1 text-white bg-primary rounded">Caja padre con .d-flex .flex-column </span>  
+  </div>
+
+  <h6>Display flex - Wrap</h6>
+<div class="bg-warning my-4 d-flex flex-nowrap rounded" style="height: 150px">
+    <span class="p-1 text-white bg-primary rounded">.d-flex .flex-nowrap </span>
+    <span class="p-1 text-white bg-primary rounded">.d-flex .flex-nowrap </span>
+    <span class="p-1 text-white bg-primary rounded">.d-flex .flex-nowrap </span>
+    <span class="p-1 text-white bg-primary rounded">.d-flex .flex-nowrap </span>  
+  </div>
+
+  <div class="bg-warning my-4 d-flex flex-wrap rounded" style="height: 150px">
+    <span class="p-1 text-white bg-primary rounded">.d-flex .flex-wrap </span>
+    <span class="p-1 text-white bg-primary rounded">.d-flex .flex-wrap </span>
+    <span class="p-1 text-white bg-primary rounded">.d-flex .flex-wrap </span>
+    <span class="p-1 text-white bg-primary rounded">.d-flex .flex-wrap </span>  
+  </div>
 
 
 
 
 
+  <h6>Display flex - Justify Content</h6>
+  <div class="bg-warning my-4 d-flex justify-content-start rounded" style="height: 150px">
+    <span class="p-1 text-white bg-primary rounded">.justify-content-start </span>
+      
+    <span class="p-1 text-white bg-primary rounded">.justify-content-start </span>  
+  </div>
 
+  <div class="bg-warning my-4 d-flex justify-content-end rounded" style="height: 150px">
+    <span class="p-1 text-white bg-primary rounded">.justify-content-end </span>
+      
+    <span class="p-1 text-white bg-primary rounded">.justify-content-end </span>  
+  </div>
 
+  <div class="bg-warning my-4 d-flex justify-content-center rounded" style="height: 150px">
+    <span class="p-1 text-white bg-primary rounded">.justify-content-center </span>
+      
+    <span class="p-1 text-white bg-primary rounded">.justify-content-center </span>  
+  </div>
+
+  <div class="bg-warning my-4 d-flex justify-content-between rounded" style="height: 150px">
+    <span class="p-1 text-white bg-primary rounded">.justify-content-between </span>
+      
+    <span class="p-1 text-white bg-primary rounded">.justify-content-between </span>  
+  </div>
+
+  <div class="bg-warning my-4 d-flex justify-content-around rounded" style="height: 150px">
+    <span class="p-1 text-white bg-primary rounded">.justify-content-around </span>
+      
+    <span class="p-1 text-white bg-primary rounded">.justify-content-around </span>  
   </div>
   
+  <h6>Display flex - Align Items</h6>
+
+  <div class="bg-warning my-4 d-flex align-items-start rounded" style="height: 150px">
+    <span class="p-1 text-white bg-primary rounded">.align-items-start </span>
+      
+    <span class="p-1 text-white bg-primary rounded">.align-items-start </span>  
+  </div>
+
+  <div class="bg-warning my-4 d-flex align-items-end rounded" style="height: 150px">
+    <span class="p-1 text-white bg-primary rounded">.align-items-end </span>
+      
+    <span class="p-1 text-white bg-primary rounded">.align-items-end </span>  
+  </div>
+
+  <div class="bg-warning my-4 d-flex align-items-center rounded" style="height: 150px">
+    <span class="p-1 text-white bg-primary rounded">.align-items-center </span>
+      
+    <span class="p-1 text-white bg-primary rounded">.align-items-center </span>  
+  </div>
+
+  <div class="bg-warning my-4 d-flex align-items-stretch rounded" style="height: 150px">
+    <span class="p-1 text-white bg-primary rounded">.align-items-stretch </span>
+      
+    <span class="p-1 text-white bg-primary rounded">.align-items-stretch </span>  
+  </div>
+
+
+  <h6>Display flex - Align Self</h6>
+
+  <div class="bg-warning my-4 d-flex rounded" style="height: 150px">
+    <span class="p-1 text-white bg-primary  align-self-center rounded">.align-self-center </span>
+      
+    <span class="p-1 text-white bg-primary align-self-end rounded">.align-self-end </span>  
+  </div>
+
+
+  <h6>Display flex - Order</h6>
+
+  <div class="bg-warning my-4 d-flex align-items-start rounded" style="height: 150px;">
+    <span class="p-2 rounded text-white bg-primary order-4">A .order-4</span>
+    <span class="p-2 rounded text-white bg-primary order-1">B .order-1</span>
+    <span class="p-2 rounded text-white bg-primary order-2">C .order-2</span>
+    <span class="p-2 rounded text-white bg-primary order-3">D .order-3</span>  
+  </div>
+
+
+
+  <h3>Positions</h3>
+
+  <h4>Padre con <code>.position-relative</code> e hijos con <code>.position-absolute</code></h4>
+
+  <div class="position-relative bg-warning" style="height: 300px;">
+    <div class="bg-dark text-white position-absolute top-0 start-0">.top-0 .start-0</div>
+    <div class="bg-dark text-white position-absolute top-0 end-0">.top-0 .end-0</div>
+    <div class="bg-dark text-white position-absolute top-50 start-50">.top-50 .start-50</div>
+    <div class="bg-dark text-white position-absolute bottom-50 end-50">.bottom-50 .end-50</div>
+    <div class="bg-dark text-white position-absolute bottom-0 start-0">.bottom-0 .start-0</div>
+    <div class="bg-dark text-white position-absolute bottom-0 end-0">.bottom-0 .end-0</div>
+  </div>
+
+  <div class="bg-warning position-fixed bottom-0 start-0 w-100 border border-dark border-2">Barra fija en el fondo con <code>.position-fixed .bottom-0 .start-0 .w-100</code></div>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </body>
 </html>
