@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./styles/style.css">
+  
+  <title>Cheatsheet Bootstrap 5</title>
+</head>
+<body>
+  
+  <div class="container">
+    <h1 class="text-center">Cheatsheet Bootstrap 5</h1>
+    <h2 class="display-3 text-center text-decoration-underline">Tipografía</h2>
+
+    <h1>Título 1 con Bootstrap</h1>
+    <h2>Título 2 con Bootstrap</h2>
+    <h3>Título 3 con Bootstrap</h3>
+    <h4>Título 4 con Bootstrap</h4>
+    <h5>Título 5 con Bootstrap</h5>
+    <h6>Título 6 con Bootstrap</h6>
+
+    <p class="h1">Párrafo con la clase <code>.h1</code></p>
+    <p class="h2">Párrafo con la clase <code>.h2</code></p>
+    <p class="h3">Párrafo con la clase <code>.h3</code></p>
+    <p class="h4">Párrafo con la clase <code>.h4</code></p>
+    <p class="h5">Párrafo con la clase <code>.h5</code></p>
+    <p class="h6">Párrafo con la clase <code>.h6</code></p>
+
+    <p class="fs-2">Párrafo con la clase <code>.fs-1</code></p>
+    <p class="fs-2">Párrafo con la clase <code>.fs-2</code></p>
+    <p class="fs-3">Párrafo con la clase <code>.fs-3</code></p>
+    <p class="fs-4">Párrafo con la clase <code>.fs-4</code></p>
+    <p class="fs-5">Párrafo con la clase <code>.fs-5</code></p>
+    <p class="fs-6">Párrafo con la clase <code>.fs-6</code></p>
+    <p>La clase .fs-* solo aplica tamaño de letra, ni negrita ni line-height</p>
+
+    <p class="display-1">Texto con la class <code>.display-1</code></p>
+    <p class="display-2">Texto con la class <code>.display-2</code></p>
+    <p class="display-3">Texto con la class <code>.display-3</code></p>
+    <p class="display-4">Texto con la class <code>.display-4</code></p>
+    <p class="display-5">Texto con la class <code>.display-5</code></p>
+    <p class="display-6">Texto con la class <code>.display-6</code></p>
+
+
+    <p class="lead">Texto con la class <code>.lead</code> que se utiliza para poner un párrafo un poco más estiloso.</p>
+
+    <p class="text-muted">Texto con la class <code>.text-muted</code> que se utiliza para poner un trozo de texto en gris, como apagado.</p>
+
+
+
+    <p>Lorem ipsum <strong>dolor sit amet</strong> consectetur adipisicing elit. Ex impedit assumenda <em>quae minus voluptate iusto</em> temporibus quibusdam <mark>quam autem id illum</mark> doloribus non dolor provident error placeat, <u>quod officiis accusamus quidem</u>, quos iure, <del>voluptatum animi</del>. Sequi, omnis quis. Quidem ipsum temporibus possimus autem odit, <small>at perspiciatis veritatis culpa maiores!</small> Hic?</p>
+
+    <p class="fw-bold">Texto con la class <code>.fw-bold</code></p>
+    <p class="fst-italic">Texto con la class <code>.fst-italic</code></p>
+    <p class="mark">Texto con la class <code>.mark</code></p>
+    <p class="text-decoration-underline">Texto con la class <code>.text-decoration-underline</code></p>
+    <p class="text-decoration-line-through">Texto con la class <code>.text-decoration-line-through</code></p>
+    <p class="small">Texto con la class <code>.small</code></p>
+
+    <p class="display-6 text-decoration-underline">Transformaciones</p>
+    <p class="text-lowercase">Texto con la class <code>.text-lowercase</code></p>
+    <p class="text-uppercase">Texto con la class <code>.text-uppercase</code></p>
+    <p class="text-capitalize">Texto con la class <code>.text-capitalize</code></p>
+
+    <blockquote class="blockquote">Este es un quote hecho con blockquote con la class <code>.blockquote</code>
+    <cite class="blockquote-footer">Ivan Luengo (el cite tiene la class <code>.blockquote-footer</code>).</cite>
+    </blockquote>
+
+    <hr>
+
+    <h2 class="display-3 text-center text-decoration-underline">Alineamiento</h2>
+
+    <p class="text-start">Lorem ipsum dolor, alineado a la izquierda con la class <code>.text-left</code></p>
+    <p class="text-end">Lorem ipsum dolor, alineado a la derecha con la class <code>.text-right</code></p>
+    <p class="text-center">Lorem ipsum dolor, alineado al centro con la class <code>.text-center</code></p>    
+
+    <hr>
+
+    <h2 class="display-3 text-center text-decoration-underline">Listas</h2>
+
+    <p class="lead">Lista de serie con Bootstrap:</p>
+    <ul>
+      <li>Item lista 1</li>
+      <li>Item lista 2</li>
+        <ul>
+          <li>Item sublista 1</li>
+          <li>Item sublista 2</li>
+          <li>Item sublista 3</li>
+        </ul>
+      <li>Item lista 3</li>
+      <li>Item lista 4</li>
+    </ul>
+    <ol>
+      <li>Item lista 1</li>
+      <li>Item lista 2</li>
+        <ol>
+          <li>Item sublista 1</li>
+          <li>Item sublista 2</li>
+          <li>Item sublista 3</li>
+        </ol>
+      <li>Item lista 3</li>
+      <li>Item lista 4</li>
+    </ol>
+    <hr>
+    <p class="lead">Lista sin estilos con la class <code>.list-unstyled</code>:</p>
+    <ul class="list-unstyled">
+      <li>Item lista 1</li>
+      <li>Item lista 2</li>
+        <ul>
+          <li>Item sublista 1</li>
+          <li>Item sublista 2</li>
+          <li>Item sublista 3</li>
+        </ul>
+      <li>Item lista 3</li>
+      <li>Item lista 4</li>
+    </ul>
+
+    <hr>
+    <p class="lead">Lista con la class <code>.list-inline</code> y con cada elemento con <code>.list-inline-item</code>:</p>
+    
+    <ul class="list-inline">
+      <li class="list-inline-item">Item lista 1</li>
+      <li class="list-inline-item">Item lista 2</li>        
+      <li class="list-inline-item">Item lista 3</li>
+      <li class="list-inline-item">Item lista 4</li>
+    </ul>
+    <hr>
+    <p class="lead">Lista con la class <code>.list-group</code> y con cada elemento con <code>.list-group-item</code>:</p>
+
+    <ul class="list-group">
+      <li class="list-group-item">Item lista 1</li>
+      <li class="list-group-item active">Item lista 2 con la class <code>.active</code></li>        
+      <li class="list-group-item">Item lista 3</li>
+      <li class="list-group-item disabled">Item lista 4 con la class <code>.disabled</code></li>
+    </ul>
+    <hr>
+
+    <p class="lead">Lista con la class <code>.list-group .list-group-flush</code> y con cada elemento con <code>.list-group-item</code>:</p>
+
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Item lista 1</li>
+      <li class="list-group-item">Item lista 2</li>        
+      <li class="list-group-item">Item lista 3</li>
+      <li class="list-group-item disabled">Item lista 4 con la class <code>.disabled</code></li>
+    </ul>
+
+    <hr>
+    <p class="lead">Grupo de links <code>&lt;a href=""></code> con la class <code>.list-group</code> y con cada elemento con <code>.list-group-item</code> y <code>.list-group-item-action</code>:</p>
+    <nav class="list-group">
+      <a class="list-group-item list-group-item-action" href="#">Link 1</a>
+      <a class="list-group-item list-group-item-action list-group-item-success" href="#">Link 2 con la class <code>.list-group-item-success</code></a>
+      <a class="list-group-item list-group-item-action list-group-item-danger" href="#">Link 3 con la class <code>.list-group-item-danger</code></a>
+      <a class="list-group-item list-group-item-action list-group-item-warning" href="#">Link 4 con la class <code>.list-group-item-warning</code></a>
+    </nav>
+
+    <hr>
+    
+    <h2 class="display-3 text-center text-decoration-underline">Code</h2>
+
+    <p>Para escribir código <code>así es como se ve con Bootstrap.</code></p>
+
+    <pre><code>
+      Esto es un ejemplo de código normal
+      &lt;h2>¡Hola!&lt;/h2>
+    </code></pre>
+
+    <hr>
+
+    <h2 class="display-3 text-center text-decoration-underline">Colores</h2>
+    <p class="lead">Colores en textos:</p>
+
+    <h4 class="text-primary">.text-primary</h4>
+    <h4 class="text-secondary">.text-secondary</h4>
+    <h4 class="text-success">.text-success</h4>
+    <h4 class="text-warning">.text-warning</h4>
+    <h4 class="text-danger">.text-danger</h4>
+    <h4 class="text-info">.text-info</h4>
+    <h4 class="text-dark">.text-dark</h4>    
+    <h4 class="text-light bg-secondary">.text-light - un poco gris</h4>
+    <h4 class="text-white bg-secondary">.text-white - blanco puro</h4>
+
+    <p class="lead">Colores en fondos:</p>
+
+    <h4 class="p-2 bg-primary">.bg-primary</h4>
+    <h4 class="p-2 bg-secondary">.bg-secondary</h4>
+    <h4 class="p-2 bg-success">.bg-success</h4>
+    <h4 class="p-2 bg-warning">.bg-warning</h4>
+    <h4 class="p-2 bg-danger">.bg-danger</h4>
+    <h4 class="p-2 bg-info">.bg-info</h4>
+    <h4 class="p-2 bg-dark text-light">.bg-dark</h4>    
+    <h4 class="p-2 bg-light bg-secondary">.bg-light - un poco gris</h4>
+    <h4 class="p-2 bg-white bg-secondary">.bg-white - blanco puro</h4>
+
+    <p class="lead">Colores en fondos con gradiente:</p>
+
+    <h4 class="p-2 bg-primary bg-gradient">.bg-primary</h4>
+    <h4 class="p-2 bg-secondary bg-gradient">.bg-secondary</h4>
+    <h4 class="p-2 bg-success bg-gradient">.bg-success</h4>
+    <h4 class="p-2 bg-warning bg-gradient">.bg-warning</h4>
+    <h4 class="p-2 bg-danger bg-gradient">.bg-danger</h4>
+    <h4 class="p-2 bg-info bg-gradient">.bg-info</h4>
+    <h4 class="p-2 bg-dark bg-gradient text-light">.bg-dark</h4>    
+    <h4 class="p-2 bg-light bg-gradient bg-secondary">.bg-light - un poco gris</h4>
+    <h4 class="p-2 bg-white bg-gradient bg-secondary">.bg-white - blanco puro</h4>
+
+
+
+    <hr>
+
+
+    <h2 class="display-3 text-center text-decoration-underline">Botones</h2>    
+
+    <button class="btn btn-primary mb-2">.btn .btn-primary</button><br>
+    <button class="btn btn-secondary mb-2">.btn .btn-secondary</button><br>
+    <button class="btn btn-success mb-2">.btn .btn-success</button><br>
+    <button class="btn btn-warning mb-2">.btn .btn-warning</button><br>
+    <button class="btn btn-danger mb-2">.btn .btn-danger</button><br>
+    <button class="btn btn-info mb-2">.btn .btn-info</button><br>
+    <button class="btn btn-dark mb-2">.btn .btn-dark</button>    <br>
+    <button class="btn btn-light text-dark mb-2">.btn .btn-light</button><br>
+    <button class="btn btn-white">.btn .btn-white</button>
+
+    <p class="lead">Botones solo con borde:</p>
+
+    <button class="btn btn-outline-primary mb-2">.btn .btn-primary</button><br>
+    <button class="btn btn-outline-secondary mb-2">.btn .btn-secondary</button><br>
+    <button class="btn btn-outline-success mb-2">.btn .btn-success</button><br>
+    <button class="btn btn-outline-warning mb-2">.btn .btn-warning</button><br>
+    <button class="btn btn-outline-danger mb-2">.btn .btn-danger</button><br>
+    <button class="btn btn-outline-info mb-2">.btn .btn-info</button><br>
+    <button class="btn btn-outline-dark mb-2">.btn .btn-dark</button>    <br>
+    <button class="btn btn-outline-light text-dark mb-2">.btn .btn-light</button><br>
+    <button class="btn btn-outline-white">.btn .btn-white</button>
+    <hr>
+    <p class="lead">Tamaños de botón:</p>
+
+    <button class="btn btn-sm btn-danger mb-2">.btn .btn-sm .btn-danger</button><br>    
+    <button class="btn btn-danger mb-2">.btn .btn-danger</button><br>
+    <button class="btn btn-lg btn-danger mb-2">.btn .btn-lg .btn-danger</button><br>
+    <hr>
+    <p class="lead">También podemos dar las clases de botón a un link:</p>
+
+    <a class="btn btn-success" href="#">Link con las classes .btn .btn-success</a>
+    
+    <hr>
+
+    <h2 class="display-3 text-center text-decoration-underline">Imágenes</h2>   
+
+    <p class="lead">Imagen sin nada:</p>    
+    <img src="https://picsum.photos/id/200/2500/400" alt="Yak">
+
+    <p class="lead">Imagen con la class <code>.img-fluid</code>:</p>    
+    <img class="img-fluid" src="https://picsum.photos/id/200/2500/400" alt="Yak">
+    <hr>
+    <p class="lead">Imagen con la class <code>.img-thumbnail</code>:</p>    
+    <img class="img-fluid img-thumbnail" src="https://picsum.photos/id/200/250" alt="Yak">
+    <hr>
+
+    <p class="lead">Imagenes con float: left y float: right usando las classes <code>.float-start</code> y <code>.float-end</code>. El padre también tiene que tener la class <code>.clearfix</code> para arreflar los problemas de flotado.</p>    
+
+    <div class="clearfix">
+      <img class="float-start me-2 mb-2" src="https://picsum.photos/id/200/150" alt="Yak">
+      <img class="float-end ms-2 mb-2" src="https://picsum.photos/id/200/150" alt="Yak">
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut atque laboriosam tempore aspernatur, aut excepturi inventore? Exercitationem, provident dolorem cumque placeat tempora quis doloremque quam. Aut assumenda possimus est cupiditate dicta, totam beatae expedita magni facere accusamus recusandae iste veritatis perspiciatis modi numquam libero tempore maiores distinctio ut incidunt voluptas.</p>
+    </div>
+    <hr>
+
+    <p class="lead">Figure con la class <code>.figure</code>:</p>   
+    <p class="lead">La imagen  tiene la class <code>.figure-img</code>:</p>    
+    
+    <figure class="figure">
+      <img src="https://picsum.photos/id/200/150" class="figure-img img-fluid" alt="Un yak">
+      <figcaption class="">Texto que está con la class <code>.figure-caption</code></figcaption>
+    </figure>
+
+
+
+
+
+
+
+  </div>
+  
+</body>
+</html>
