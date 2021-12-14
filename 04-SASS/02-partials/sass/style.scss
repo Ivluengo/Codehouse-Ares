@@ -1,0 +1,25 @@
+// reset de picalil·li
+@use 'reset';
+
+// Importar variables con @use
+@use 'variables' as v;
+
+// Importar estilos css con @use
+@use './components/button';
+
+// Reset muy muy simple
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  background: #c7c7c7;
+}
+
+h2 {
+  color: v.$colorPrimario;
+}

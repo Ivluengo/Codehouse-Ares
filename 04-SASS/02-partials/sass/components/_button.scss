@@ -1,0 +1,14 @@
+@use '../variables' as *; 
+//namespace
+  // Si no ponemos nada, hay que llamar a las variables usando el nombre del archivo antes dle punto
+  // Si ponemos un alias usando "as" podemos llamar al namespace como queramos
+  // Si ponemos el alias con un asterisco, "*" no hace falta que usemos el namespace
+
+.button {
+  border: 3px solid $colorPrimario;
+  color: $colorSecundario;
+  padding: 1rem;  
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-family: $fuentePrincipal;
+}

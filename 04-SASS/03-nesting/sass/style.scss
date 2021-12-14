@@ -1,0 +1,83 @@
+@use 'reset';
+
+body {
+  background: tomato;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+// Ejemplo de nesting de reglas CSS
+.articles {
+  border: 2px solid white;
+  padding: 1.5rem;  
+  column-gap: 1rem;  
+
+  h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;   
+  }
+
+  .articles__box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    // Ejemplo de nesting de media queries, en las que no tenemos que poner las clases que queremos cambiar porque ya lo deduce automáticamente
+    @media (min-width: 600px) {
+      flex-wrap: nowrap;
+    }
+
+  }
+
+  .article {
+    border: 1px solid white;
+    padding: 1rem;
+    text-align: center;   
+
+    .article__img {
+      width: auto;
+      margin: 0 auto;
+      transition: color 0.3s 1s ease-in;
+    }
+
+    .article__text {
+
+      //Ejemplo de nesting de propiedades
+      font: {
+        family:'Lucida Sans', sans-serif;
+        size: 0.9em;
+        style: italic;
+        weight: 200;
+      }
+      transition: {
+        property: color;
+        duration: 0.3s;
+        delay: 0.2s;
+        timing-function: ease-in;
+      }
+
+      // Ejemplo de nesting de pseudo selectores
+      &:hover {
+        color: white;
+      }
+    }    
+  }
+}
+// Esta media query la he usado más arriba usando nesting
+// @media (min-width: 600px) {
+//   .articles .articles__box {
+//     flex-wrap: nowrap;
+//   }
+// }
+  

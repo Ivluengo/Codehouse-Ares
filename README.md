@@ -53,6 +53,14 @@ Página que nos indica qué podemos usar, qué no, qué está en desuso o qué h
 
 [Canal de youtube de Dorian Designs](https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A)
 
+---
+
+#### Resets CSS
+
+[Modern CSS Reset](https://dev.to/hankchizljaw/a-modern-css-reset-6p3)
+
+[Picalil·li Reset](https://piccalil.li/blog/a-modern-css-reset/)
+
 ### Juegos CSS
 
 [Para display: flex; - Rana](https://flexboxfroggy.com/#es)
