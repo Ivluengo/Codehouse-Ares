@@ -1,0 +1,32 @@
+/* Este comentario de bloque sigue esxistiendo y aparecerá en el archivo CSS  */
+
+// Este comentario, que además es de tipo enlínea, no de bloque, no aparecerá en nuestro CSS
+
+
+// Variables de CSS siguen siendo válidas y además también serán compiladas en el archivo css
+:root {
+  --colorSecundario: tomato;
+}
+
+// Las variables SASS se escriben con el $ y no son compiladas en el archivo CSS, directamente se escribirá el valor.
+$colorPrimario: green;
+$borderBig: 3px solid black;
+
+$border-radius: 3px;
+$border-width: 4px;
+$border-color: white;
+$border-style: solid;
+
+body {
+  background: var(--colorSecundario);
+}
+
+h1 {
+  color: $colorPrimario;
+  border: $borderBig;
+}
+
+h2 {
+  font-weight: 200;
+  border: $border-width $border-style $border-color;
+}

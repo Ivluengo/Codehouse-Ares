@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* Este comentario de bloque sigue esxistiendo y aparecerá en el archivo CSS  */
+:root {
+  --colorSecundario: tomato;
+}
+
+body {
+  background: var(--colorSecundario);
+}
+
+h1 {
+  color: green;
+  border: 3px solid black;
+}
+
+h2 {
+  font-weight: 200;
+  border: 4px solid white;
+}
+
+/*# sourceMappingURL=style.css.map */
