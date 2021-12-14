@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'Brandon';
+  src: url('../fonts/brandon/Brandon_reg.otf') ;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Brandon';
+  src: url('../fonts/brandon/Brandon_reg_it.otf');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Brandon';
+  src: url('../fonts/brandon/Brandon_thin.otf');
+  font-weight: 200;
+}
+
+/* Cargar las fuentes con import es un poco más lento que cargarlo en el <head> */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+
+
+/* @font-face {
+  font-family: 'Brandon';
+  src: url('../fonts/brandon/Brandon_blk.otf');
+  font-weight: 900;
+} */
+
+
+
+h1 {
+  font-family: 'Brandon', sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+h2 {
+  font-family: 'Brandon', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+}
+p {
+  font-family: 'Brandon', sans-serif;
+
+}

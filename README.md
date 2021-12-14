@@ -63,3 +63,11 @@ Página que nos indica qué podemos usar, qué no, qué está en desuso o qué h
 
 [Skeleton](http://getskeleton.com/)
 [Primitive UI](https://taniarascia.github.io/primitive/)
+
+## Otros
+
+### Recursos
+
+Página con muchos links CDN
+
+https://cdnjs.com/

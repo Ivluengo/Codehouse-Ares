@@ -1,0 +1,13 @@
+/* versión con d-flex */
+/* .logo {
+  width: 30px;
+} */
+/* versión con row */
+.logo img {
+  width: 30px;
+}
+
+
+.borde {
+  border: 2px solid red;
+}
