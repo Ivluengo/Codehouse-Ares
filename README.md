@@ -61,6 +61,8 @@ Página que nos indica qué podemos usar, qué no, qué está en desuso o qué h
 
 [Picalil·li Reset](https://piccalil.li/blog/a-modern-css-reset/)
 
+[Normalize](https://necolas.github.io/normalize.css/)
+
 ### Juegos CSS
 
 [Para display: flex; - Rana](https://flexboxfroggy.com/#es)
