@@ -122,6 +122,7 @@ console.log('numero6 =', numero6);
 numero6 %= 2;
 console.log('numero6 %= 2;', numero6); 
 
+
 //?========================================
 
 //? Operadores de incremento y decremento
@@ -134,12 +135,3 @@ x++; // x = 26
 x--; // x = 25
 
 console.log(x); 
-
-
-//* Ejercicio 1
-const horas = 24;
-const minutos = 60;
-const segundos = 60;
-const segundosDelDia = horas * minutos * segundos;
-
-console.log(`Un día tiene ${segundosDelDia} segundos.`);
