@@ -62,7 +62,7 @@ if(!incluyeAdmiracion) {
   console.log('Todo mal');
 }
 
-*/
+
 
 
 const edad = prompt('Dime tu edad');
@@ -78,9 +78,25 @@ if(edad) {
 }else {
   console.log('👎');
 }
-
+*/
 // console.log('includes("Mundo") ->', frase.includes('Mundo'));
 
 // console.log(fraseSplit);
 
 // console.log(frase);
+
+
+//* Prueba de crear la misma función que indexOf
+const palabra = 'tomate';
+palabra.indexOf('m'); // 2
+
+
+function indiceDe(letra, palabra) {
+  for(let i=0; i<palabra.length; i++) {
+    if (palabra[i] == letra) {
+      return i;
+    }
+  }
+}
+
+console.log(indiceDe('e', palabra));

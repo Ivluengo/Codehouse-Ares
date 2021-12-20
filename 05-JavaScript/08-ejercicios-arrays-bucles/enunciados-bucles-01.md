@@ -83,7 +83,7 @@ Con un `while` construye y muestra por consola un "triángulo" de 7 líneas como
 
 ### **Bucles 11.**
 
-Con el `for of`, crea un array con cinco nombres de persona y recórrelo mostrando el texto "Conozco a alguien llamado...
+Con el `for of`, crea un array con cinco nombres de persona y recórrelo mostrando el texto "Conozco a alguien llamado..."
 
 ---
 
