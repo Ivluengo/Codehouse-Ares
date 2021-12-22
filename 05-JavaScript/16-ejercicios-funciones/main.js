@@ -115,6 +115,157 @@ const numeroMayor = (array) => {
 console.log(numeroMayor(arrNum));
 console.log(Math.min(...arrNum));
 */
+
+//* Ejercicio 5
+// Haz una función que haga coja un string que le pasemos por parámetro y le convierta la primera letra en mayúscula.
+/*
+const mayuscula = (frase) => {  // hola
+
+  // const primeraLetra = frase.slice(0,1);
+  // const primeraMayuscula = primeraLetra.toUpperCase();
+  // const parteFinal = frase.slice(1);
+  // const fraseMayuscula = primeraMayuscula + parteFinal;
+
+  const fraseMayuscula = frase.slice(0,1).toUpperCase() + frase.slice(1);
+                
+  return fraseMayuscula;
+}
+
+const capitalize = (frase) => {
+
+  // creamos un array con cada palabra dividiendo el string por sus espacios
+  const arrPalabras = frase.split(' ');
+
+  // recorremos el array
+  for(let i=0; i<arrPalabras.length; i++) {
+    // arrPalabras[i] = arrPalabras[i].slice(0,1).toUpperCase() + arrPalabras[i].slice(1);
+
+    // convertimos cada palabra con su primera letra en mayúscula
+    arrPalabras[i] = mayuscula(arrPalabras[i]);
+  }
+
+  // juntamos cada elemento del array en un nuevo string
+  const fraseCapitalizada = arrPalabras.join(' ');
+
+  // devolvemos el nuevo string
+  return fraseCapitalizada;
+}
+
+console.log(mayuscula('hola, qué tal?')); // "Hola, qué tal?"
+
+console.log(capitalize('hola, qué tal?')); // "Hola, Qué Tal?"
+
+//* Ejercicio 6
+// Crea una función a la que le pasamos 2 números y imprime por consola cual es el mayor de los dos o si son iguales.
+
+
+const mayIgual = (a, b) => { 
+  if(a > b) {
+    console.log(`${a} es mayor que ${b}`);
+  }else if(b > a) {
+    console.log(`${b} es mayor que ${a}`);
+  }else {
+    console.log(`${a} y ${b} son iguales.`);
+  }
+}
+
+
+const verifyNumberPrompt = (mensaje = 'Dime un número.') => {
+  let number = prompt(mensaje);
+             
+  if(number.trim() && !isNaN(number.trim())  ){ 
+    number = Number(number);
+    return number;
+  } else{
+    console.error('No has escrito un número.')
+  }
+}
+
+
+const a = verifyNumberPrompt();
+const b = verifyNumberPrompt('Dime el segundo número.');
+
+
+mayIgual( a , b );
+
+*/
+//* Ejercicio 7
+// Crea una función que reciba dos números y devuelva true si los números son iguales.
+
+// function sonIguales(x, y) {
+
+//   if(x === y){
+//     return true;
+//   }else {
+//     return false;
+//   }
+// }
+
+
+
+
+const sonIguales = (x, y) => {
+  return x === y ? true : false;
+}
+
+const sonIguales2 = (x, y) => x === y ? true : false;
+
+const sonIguales3 = (x, y) => x === y;
+
+console.log( sonIguales3(5,8) );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //* Ejercicio 8 ¡Calculadora!
 
 
@@ -126,7 +277,7 @@ console.log(Math.min(...arrNum));
 // * Que se imprima por consola el resultado de cada operación. 
 // * No hace falta que las funciones devuelvan nada, solo que impriman por consola.
 // * Refactoriza para que haya el menor número de cosas repetidas.
-
+/*
 const askTwoNumbers = () => {
   // pedimos al usuario 2 números
     // primero comprobamos si ha escrito un número real
@@ -146,11 +297,10 @@ const askTwoNumbers = () => {
     // si sale del while es que es un número y podemos convertirlo
     num2 = Number(num2);
 
-    const dosNumeros = [num1, num2];
+    // const dosNumeros = [num1, num2];
+    // return dosNumeros;
 
-    return dosNumeros;
-
-
+    return [num1, num2];
 }
 
 const sumar = (x, y) => {
@@ -158,8 +308,18 @@ const sumar = (x, y) => {
   console.log(`El resultado es ${resultado}`);
 } 
 
+const restar = (x, y) => {
+  const resultado = x - y;
+  console.log(`El resultado es ${resultado}`);
+}
 
+const multiplicar = (x, y) => {
+  console.log(`El resultado es ${x * y}`);
+}
 
+const dividir = (x, y) => {
+  console.log(`El resultado es ${x / y}`);
+}
 
 
 
@@ -176,20 +336,26 @@ do {
   if(calculadora === 'x') {
     break;
   }
-    
-    
+  
+
   if(calculadora === 's'){
     const [num1, num2] = askTwoNumbers();
-    sumar(num1, num2);
+    sumar(num1, num2);    
 
     // const resultado = num1 + num2;
     // console.log(`El resultado es ${resultado}`);
 
   }else if(calculadora === 'r') {
+    const [num1, num2] = askTwoNumbers();
+    restar(num1, num2);
 
   }else if(calculadora === 'm') {
+    const [num1, num2] = askTwoNumbers();
+    multiplicar(num1, num2);
     
   }else if(calculadora === 'd') {
+    const [num1, num2] = askTwoNumbers();
+    dividir(num1, num2);
 
   }else {
     console.error('Pon un valor correcto, ¡cenutri@!');
@@ -197,3 +363,4 @@ do {
 
 
 }while(true)
+*/

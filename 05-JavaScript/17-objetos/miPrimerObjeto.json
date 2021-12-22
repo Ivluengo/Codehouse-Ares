@@ -1,0 +1,21 @@
+{
+  "nombreEmpresa": "Salesforce",
+  "pais": "EEUU",
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "ivluengo",
+      "email": "ivan@email.com" 
+    },
+    {
+      "id": 2, 
+      "nombre": "manu33", 
+      "email": "manu@email.com" 
+    },
+    {
+      "id": 3, 
+      "nombre": "anne74", 
+      "email": "anna@email.com" 
+    }
+  ]
+}
